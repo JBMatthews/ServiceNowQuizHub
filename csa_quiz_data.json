@@ -1,0 +1,1731 @@
+{
+  "title": "",
+  "dev": "QuizHub",
+  "date": "08/17/2023",
+  "description": "Just a template for creating a JSON file to import a new quiz into Quiz Hub",
+  "questions": [
+    {
+      "prompt": "What is the purpose of the import set table?",
+      "type": "single",
+      "choices": [
+        "Used to import user’s data only",
+        "It acts as a staging area for records imported",
+        "A new application in ServiceNow"
+      ],
+      "correct_answers": [
+        "It acts as a staging area for records imported"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What purpose the record producer be used for?",
+      "type": "multiple",
+      "choices": [
+        "Workflow-based things request emergency change, wizards, etc",
+        "Virtual representation of activities consisting of connected steps planned out in a sequential manner",
+        "Valuing, depreciating, determining, cost allocation strategy",
+        "Memory, response time & available semaphores"
+      ],
+      "correct_answers": [
+        "Workflow-based things request emergency change, wizards, etc"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How are users and groups related?",
+      "type": "single",
+      "choices": [
+        "Many to Many",
+        "One to one",
+        "One to Many",
+        "All to All"
+      ],
+      "correct_answers": [
+        "Many to Many"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a schema map?",
+      "type": "single",
+      "choices": [
+        "It's JavaScript configured to run when a record is displayed, inserted, updated, deleted, or when a table is queried",
+        "It's a gear icon located in the top left-hand side of every list. It allows you to add columns (via slush bucket) to the current list you are on",
+        "Graphical representation that shows the referenced, referencing, extended, and extending tables",
+        "None of the above"
+      ],
+      "correct_answers": [
+        "Graphical representation that shows the referenced, referencing, extended, and extending tables"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "To access knowledge articles without login, the knowledge article must be?",
+      "type": "single",
+      "choices": [
+        "Set to public",
+        "Set to review",
+        "Set to Private",
+        "Set to retire"
+      ],
+      "correct_answers": [
+        "Set to public"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What can you do with a service catalog item once it's built?",
+      "type": "multiple",
+      "choices": [
+        "Publish it in the service catalog",
+        "Group it in an order guide",
+        "Show users questions and choices",
+        "All of the above"
+      ],
+      "correct_answers": [
+        "Publish it in the service catalog"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following is not a field?",
+      "type": "single",
+      "choices": [
+        "Duration",
+        "Split",
+        "Script",
+        "Suggestion"
+      ],
+      "correct_answers": [
+        "Split"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Where would you go to see if an admin impersonated another user?",
+      "type": "single",
+      "choices": [
+        "Tables",
+        "Base Class",
+        "System Log",
+        "User Administration"
+      ],
+      "correct_answers": [
+        "System Log"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Multiple Choice, Single Line Text, and Select Box are what type of elements in ServiceNow?",
+      "type": "single",
+      "choices": [
+        "Order Guides",
+        "Request Types",
+        "Variable Types",
+        "Related Lists"
+      ],
+      "correct_answers": [
+        "Variable Types"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is the language used for scripting in ServiceNow?",
+      "type": "single",
+      "choices": [
+        "Java",
+        "AngularJS",
+        "JavaScript",
+        "Jelly"
+      ],
+      "correct_answers": [
+        "JavaScript"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Regarding update sets, Customer updates/payload is stored in _ table?",
+      "type": "single",
+      "choices": [
+        "update_set",
+        "sys_update_xml",
+        "sys_customer_update"
+      ],
+      "correct_answers": [
+        "sys_update_xml"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Can be used to join two tables.",
+      "type": "single",
+      "choices": [
+        "Link Tables",
+        "Database Views",
+        "Views"
+      ],
+      "correct_answers": [
+        "Database Views"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a Service Now event?",
+      "type": "single",
+      "choices": [
+        "Business rules, client scripts, fields, forms and form sections, reports, tables, views, and workflows",
+        "Create a new table and fill out the extend table field",
+        "It is an indication to the ServiceNow processes that something notable has occurred, e.g., approving a request, workflow, etc.",
+        "Semaphores, which control the number of user transactions that can be run in parallel. It makes sure there aren't too many things running at once."
+      ],
+      "correct_answers": [
+        "It is an indication to the ServiceNow processes that something notable has occurred, e.g., approving a request, workflow, etc."
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "onCellEdit() client script is executed when?",
+      "type": "single",
+      "choices": [
+        "Any field is modified",
+        "A particular field is modified on Form",
+        "A particular field is modified on List"
+      ],
+      "correct_answers": [
+        "A particular field is modified on List"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How do you get to the categories on an incident and other table?",
+      "type": "single",
+      "choices": [
+        "Go to system definition > choice list",
+        "In the task SLA form",
+        "Base Class",
+        "Go to social it > feed administration > messages"
+      ],
+      "correct_answers": [
+        "Go to system definition > choice list"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "At which location are the records saved?",
+      "type": "single",
+      "choices": [
+        "Form",
+        "List",
+        "Table",
+        "All the Above"
+      ],
+      "correct_answers": [
+        "Table"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How are referenced fields identified in ServiceNow?",
+      "type": "single",
+      "choices": [
+        "From Base Class",
+        "From Blue Book",
+        "From Reference lookup Icon",
+        "None of the above"
+      ],
+      "correct_answers": [
+        "From Reference lookup Icon"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following belongs to Service Catalog? (Select all that Apply)",
+      "type": "multiple",
+      "choices": [
+        "Catalog Items",
+        "Record Producers",
+        "Variables",
+        "Change tasks"
+      ],
+      "correct_answers": [
+        "Catalog Items",
+        "Record Producers",
+        "Variables"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What does a condition builder format look like?",
+      "type": "single",
+      "choices": [
+        "None",
+        "Field > Operator > Value",
+        "Field > Condition > Operator",
+        "Field > Operator > Name"
+      ],
+      "correct_answers": [
+        "Field > Operator > Value"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What are the ways you can bring users into your ServiceNow instance?",
+      "type": "multiple",
+      "choices": [
+        "SSO",
+        "LDAP",
+        "Manual Import"
+      ],
+      "correct_answers": [
+        "SSO",
+        "LDAP",
+        "Manual Import"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is not related to Workflow?",
+      "type": "single",
+      "choices": [
+        "Transitions",
+        "Versions",
+        "Activities",
+        "Categories"
+      ],
+      "correct_answers": [
+        "Categories"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is not part of Workflow Editor User Interface?",
+      "type": "single",
+      "choices": [
+        "Canvas",
+        "Palette",
+        "Activity Tab",
+        "Title bar"
+      ],
+      "correct_answers": [
+        "Activity Tab"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "SLAs will run only on task extended tables?",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Knowledge Articles can be sorted by the following?",
+      "type": "multiple",
+      "choices": [
+        "Relevancy",
+        "Most recent update",
+        "Number of views",
+        "All of the above"
+      ],
+      "correct_answers": [
+        "Relevancy",
+        "Most recent update",
+        "Number of views"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which one of the following are associated with the CMDB? (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "Database",
+        "Table and fields",
+        "Dependency views",
+        "Service Processes",
+        "User Permissions"
+      ],
+      "correct_answers": [
+        "Database",
+        "Dependency views",
+        "Service Processes"
+      ],
+      "correct_answers_index": [
+        0,
+        2,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Views is only for lists to personalize list layout and columns",
+      "type": "single",
+      "choices": [
+        "False",
+        "True"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What can be used to automatically populate fields in a form?",
+      "type": "single",
+      "choices": [
+        "Assignment Rules",
+        "Formatters",
+        "Reference Qualifiers",
+        "Template"
+      ],
+      "correct_answers": [
+        "Template"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What triggers and event? (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "Business Rules",
+        "Client Script",
+        "UI Page",
+        "Workflow"
+      ],
+      "correct_answers": [
+        "Business Rules",
+        "Workflow"
+      ],
+      "correct_answers_index": [
+        0,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "UAT, Development, Review, QA and Test are user perspective of ServiceNow production instance",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which is not Related to UI Action?",
+      "type": "single",
+      "choices": [
+        "Form Button",
+        "Form Link",
+        "Search",
+        "List Link"
+      ],
+      "correct_answers": [
+        "Search"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What application is available to all users?",
+      "type": "single",
+      "choices": [
+        "Change",
+        "Incident",
+        "Facilities",
+        "Self-Service"
+      ],
+      "correct_answers": [
+        "Self-Service"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "After high security plugin is activated, a ‘security_admin’ privilege is  created.  What is an elevated privilege?",
+      "type": "single",
+      "choices": [
+        "Elevated privilege is used to promote extension tables",
+        "Used to enable the ITIL role to have an Admin type access",
+        "A role that has special permissions for the duration of the log in session",
+        "Users with the Admin role"
+      ],
+      "correct_answers": [
+        "A role that has special permissions for the duration of the log in session"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "In an SLA definition, which one of the following is a condition that will trigger an SLA?",
+      "type": "single",
+      "choices": [
+        "Begin  Condition,  Stop  Condition,  and  Pause  Condition",
+        "Start  Condition,  Stop  Condition and  Reset  Condition",
+        "Start Condition, End Condition and Pause Condition",
+        "Start Condition, Stop Condition and Pause Condition"
+      ],
+      "correct_answers": [
+        "Start  Condition,  Stop  Condition and  Reset  Condition"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Multiple Choice, Single Line Texts and Select Box are what type of elements in Service Now?",
+      "type": "single",
+      "choices": [
+        "Order  Guides",
+        "Request  Types",
+        "Variable  Types",
+        "Related  Lists"
+      ],
+      "correct_answers": [
+        "Variable  Types"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "By default in ServiceNow, (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "Changes made to data",
+        "Changes made to a form",
+        "Changes made to a schedule",
+        "Changes made to a homepage"
+      ],
+      "correct_answers": [
+        "Changes made to a form",
+        "Changes made to a homepage"
+      ],
+      "correct_answers_index": [
+        1,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a Transform Map in ServiceNow?",
+      "type": "single",
+      "choices": [
+        "A map that is used to store the history of the incident records",
+        "A map used to add data to encrypted fields",
+        "A map used to trigger Business rules before the data is queued in the outbound Web Service",
+        "A map to determine relationships between fields displaying an import set to fields in an existing table"
+      ],
+      "correct_answers": [
+        "A map to determine relationships between fields displaying an import set to fields in an existing table"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How are users related to roles or groups?",
+      "type": "single",
+      "choices": [
+        "1 to many relationships",
+        "Many to 1 relationship",
+        "1 to 1 relationship",
+        "Many to many relationship"
+      ],
+      "correct_answers": [
+        "1 to many relationships"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which table stores roles?",
+      "type": "single",
+      "choices": [
+        "user_role",
+        "sys_user_role",
+        "imp_user",
+        "sys_role"
+      ],
+      "correct_answers": [
+        "sys_user_role"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Assign Role, Manager, Incidents, Problems and Change? (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "ITIL/Fulfiller",
+        "System Administrator",
+        "Approver",
+        "ESS User/End User"
+      ],
+      "correct_answers": [
+        "ITIL/Fulfiller",
+        "System Administrator"
+      ],
+      "correct_answers_index": [
+        0,
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Out of the below listed applications, which will not run natively on smartphones?",
+      "type": "single",
+      "choices": [
+        "Workflow",
+        "User Administration",
+        "Self-Service",
+        "Service Catalogue"
+      ],
+      "correct_answers": [
+        "User Administration"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What are the steps in SLA?",
+      "type": "single",
+      "choices": [
+        "Start, Pause, Stop",
+        "Start, Hold, Stop",
+        "Start, Pause, Stop, End",
+        "Start, Hold, Stop, End"
+      ],
+      "correct_answers": [
+        "Start, Pause, Stop, End"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Gauge is added to:",
+      "type": "single",
+      "choices": [
+        "User Profile",
+        "Change Request",
+        "Home Page",
+        "Favorites"
+      ],
+      "correct_answers": [
+        "Home Page"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following is not a valid field type (for Incident Table)?",
+      "type": "single",
+      "choices": [
+        "Currency",
+        "Long String",
+        "Suggestion"
+      ],
+      "correct_answers": [
+        "Long String"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Catalog Variables can be arranged on a catalog item by setting the appropriate value of field ‘Order’",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "If prefix of incident needs to be changed, where can one refer?",
+      "type": "single",
+      "choices": [
+        "System Definition->Number Maintenance",
+        "Right click on Incident Number->Personalize Dictionary",
+        "Both A. & B.",
+        "None"
+      ],
+      "correct_answers": [
+        "System Definition->Number Maintenance"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "The order field in Service Catalog displays the catalog item in the ascending order of this value.",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "In which of the following requirements we cannot ‘Scheduled Jobs’?",
+      "type": "single",
+      "choices": [
+        "To update the old records",
+        "To check the conditions every day at specific time",
+        "For form validation at client side every day",
+        "To send an email notification on demand of user wish"
+      ],
+      "correct_answers": [
+        "For form validation at client side every day"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is an SSO?",
+      "type": "single",
+      "choices": [
+        "Sign-On Single",
+        "Single Sign-On",
+        "Sign Single-On",
+        "None of the Above"
+      ],
+      "correct_answers": [
+        "Single Sign-On"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "If several update sets have modified the same object, like a form, which change will be the one moved to the new, merged update set?",
+      "type": "single",
+      "choices": [
+        "The most recent one"
+      ],
+      "correct_answers": [
+        "The most recent one"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What are exempt in upgrades?",
+      "type": "single",
+      "choices": [
+        "Customizations"
+      ],
+      "correct_answers": [
+        "Customizations"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "UI Policies run on which side?",
+      "type": "single",
+      "choices": [
+        "Client Side"
+      ],
+      "correct_answers": [
+        "Client Side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "A UI action with an order number of 110 will display after a UI action with an order number of 120?",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is not related to Workflow?",
+      "type": "single",
+      "choices": [
+        "Transitions",
+        "Versions",
+        "Activities",
+        "Categories"
+      ],
+      "correct_answers": [
+        "Categories"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is not part of Workflow Editor User Interface?",
+      "type": "single",
+      "choices": [
+        "Canvas",
+        "Palette",
+        "Activity Tab",
+        "Title bar"
+      ],
+      "correct_answers": [
+        "Activity Tab"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "SLAs will run only on task extended tables?",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Knowledge Articles can be sorted by the following?",
+      "type": "single",
+      "choices": [
+        "Relevancy",
+        "Most recent update",
+        "Number of views",
+        "All of the above"
+      ],
+      "correct_answers": [
+        "All of the above"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which one of the following are associated with the CMDB? (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "Database",
+        "Table and fields",
+        "Dependency views",
+        "Service Processes",
+        "User Permissions"
+      ],
+      "correct_answers": [
+        "Database",
+        "Dependency views",
+        "Service Processes"
+      ],
+      "correct_answers_index": [
+        0,
+        2,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Views is only for lists to personalize list layout and columns",
+      "type": "single",
+      "choices": [
+        "False",
+        "True"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What can be used to automatically populate fields in a form?",
+      "type": "single",
+      "choices": [
+        "Assignment Rules",
+        "Formatters",
+        "Reference Qualifiers",
+        "Template"
+      ],
+      "correct_answers": [
+        "Template"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What triggers an event? (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "Business Rules",
+        "Client Script",
+        "UI Page",
+        "Workflow"
+      ],
+      "correct_answers": [
+        "Business Rules",
+        "Workflow"
+      ],
+      "correct_answers_index": [
+        0,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "UAT, Development, Review, QA, and Test are user perspectives of the ServiceNow production instance",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which is not Related to UI Action?",
+      "type": "single",
+      "choices": [
+        "Form Button",
+        "Form Link",
+        "Search",
+        "List Link"
+      ],
+      "correct_answers": [
+        "Search"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What application is available to all users?",
+      "type": "single",
+      "choices": [
+        "Change",
+        "Incident",
+        "Facilities",
+        "Self-Service"
+      ],
+      "correct_answers": [
+        "Self-Service"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "After the high-security plugin is activated, a ‘security_admin’ privilege is created. What is an elevated privilege?",
+      "type": "single",
+      "choices": [
+        "Elevated privilege is used to promote extension tables",
+        "Used to enable the ITIL role to have an Admin type of access",
+        "A role that has special permissions for the duration of the log-in session",
+        "Users with the Admin role"
+      ],
+      "correct_answers": [
+        "A role that has special permissions for the duration of the log-in session"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "In an SLA definition, which one of the following is a condition that will trigger an SLA?",
+      "type": "single",
+      "choices": [
+        "Start Condition, Stop Condition, and Pause Condition",
+        "Start Condition, Stop Condition, and Reset Condition",
+        "Start Condition, End Condition, and Pause Condition",
+        "Start Condition, Stop Condition, and Pause Condition"
+      ],
+      "correct_answers": [
+        "Start Condition, Stop Condition, and Reset Condition"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Multiple Choice, Single Line Texts, and Select Box are what types of elements in ServiceNow?",
+      "type": "single",
+      "choices": [
+        "Order Guides",
+        "Request Types",
+        "Variable Types",
+        "Related Lists"
+      ],
+      "correct_answers": [
+        "Variable Types"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "By default in ServiceNow, (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "Changes made to data",
+        "Changes made to a form",
+        "Changes made to a schedule",
+        "Changes made to a homepage"
+      ],
+      "correct_answers": [
+        "Changes made to a form",
+        "Changes made to a homepage"
+      ],
+      "correct_answers_index": [
+        1,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a Transform Map in ServiceNow?",
+      "type": "single",
+      "choices": [
+        "A map that is used to store the history of the incident records",
+        "A map used to add data to encrypted fields",
+        "A map used to trigger Business rules before the data is queued in the outbound Web Service",
+        "A map to determine relationships between fields displaying an import set to fields in an existing table"
+      ],
+      "correct_answers": [
+        "A map to determine relationships between fields displaying an import set to fields in an existing table"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How are users related to roles or groups?",
+      "type": "single",
+      "choices": [
+        "1 to many relationships",
+        "Many to 1 relationship",
+        "1 to 1 relationship",
+        "Many to many relationship"
+      ],
+      "correct_answers": [
+        "1 To many relationship"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which table stores roles?",
+      "type": "single",
+      "choices": [
+        "user_role",
+        "sys_user_role",
+        "imp_user",
+        "sys_role"
+      ],
+      "correct_answers": [
+        "sys_user_role"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Assign Role, Manager, Incidents, Problems, and Change? (Select Multiple)",
+      "type": "multiple",
+      "choices": [
+        "ITIL/Fulfiller",
+        "System Administrator",
+        "Approver",
+        "ESS User/End User"
+      ],
+      "correct_answers": [
+        "ITIL/Fulfiller",
+        "System Administrator"
+      ],
+      "correct_answers_index": [
+        0,
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Out of the below-listed applications, which will not run natively on smartphones?",
+      "type": "single",
+      "choices": [
+        "Workflow",
+        "User Administration",
+        "Self-Service",
+        "Service Catalogue"
+      ],
+      "correct_answers": [
+        "User Administration"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What are the steps in SLA?",
+      "type": "single",
+      "choices": [
+        "Start, Pause, Stop",
+        "Start, Hold, Stop",
+        "Start, Pause, Stop, End",
+        "Start, Hold, Stop, End"
+      ],
+      "correct_answers": [
+        "Start, Pause, Stop, End"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Gauge is added to:",
+      "type": "single",
+      "choices": [
+        "User Profile",
+        "Change Request",
+        "Home Page",
+        "Favorites"
+      ],
+      "correct_answers": [
+        "Home Page"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following is not a valid field type (for Incident Table)?",
+      "type": "single",
+      "choices": [
+        "Currency",
+        "Long String",
+        "Suggestion"
+      ],
+      "correct_answers": [
+        "Long String"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Catalog Variables can be arranged on a catalog item by setting the appropriate value of the field ‘Order’",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "If the prefix of the incident needs to be changed, where can one refer?",
+      "type": "single",
+      "choices": [
+        "System Definition->Number Maintenance",
+        "Right-click on Incident Number->Personalize Dictionary",
+        "Both A. & B.",
+        "None"
+      ],
+      "correct_answers": [
+        "System Definition->Number Maintenance"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "The order field in Service Catalog displays the catalog item in the ascending order of this value.",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "In which of the following requirements we cannot use ‘Scheduled Jobs’?",
+      "type": "single",
+      "choices": [
+        "To update the old records",
+        "To check the conditions every day at a specific time",
+        "For form validation at the client-side every day",
+        "To send an email notification on the demand of the user's wish"
+      ],
+      "correct_answers": [
+        "For form validation at the client-side every day"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is an SSO?",
+      "type": "single",
+      "choices": [
+        "Sign-On Single",
+        "Single Sign-On",
+        "Sign Single-On",
+        "None of the Above"
+      ],
+      "correct_answers": [
+        "Single Sign-On"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "A UI action with an order number of 110 will display after a UI action with an order number of 120?",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What are the four knowledge workflows available in the ServiceNow base instance?",
+      "type": "multiple",
+      "choices": [
+        "Instant Publish: Immediately publishes a draft article without requiring an approval",
+        "Instant Retire: Immediately retires a published article without requiring an approval",
+        "Approval publish: Request approval from a manager of the knowledge base before moving the article it the publish state",
+        "Retire Knowledge: Moves a knowledge article to the retired state."
+      ],
+      "correct_answers": [
+        "Approval publish: Request approval from a manager of the knowledge base before moving the"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a characteristic of importing data into ServiceNow?",
+      "type": "single",
+      "choices": [
+        "An existing Transform Map can be used one time on the same import set",
+        "An existing Transform Map can be used multiple times on the same import set",
+        "Coalesce fields are used only after running Transform",
+        "Any user can manage and set up import sets"
+      ],
+      "correct_answers": [
+        "An existing Transform Map can be used multiple times on the same import set"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following is used to initiate a flow?",
+      "type": "single",
+      "choices": [
+        "A Trigger",
+        "An Event",
+        "A spoke",
+        "Core Action"
+      ],
+      "correct_answers": [
+        "A Trigger"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is generated from the Service Catalog once a user places an order for an item or service?",
+      "type": "single",
+      "choices": [
+        "A request",
+        "An Order Guide",
+        "An SLA",
+        "A change request"
+      ],
+      "correct_answers": [
+        "A request"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following allows a user to edit field values in a list without opening the form?",
+      "type": "single",
+      "choices": [
+        "List Editor",
+        "Data Editor",
+        "Edit Menu",
+        "Form Designer"
+      ],
+      "correct_answers": [
+        "List Editor"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a formatter? Select one of the following.",
+      "type": "single",
+      "choices": [
+        "A formatter is a form element used to display information that is not a field in the record",
+        "A formatter is a set of conditions applied to a table to help find and work with data",
+        "A formatter allows you to configure applications on your instance",
+        "A formatter allows you to populate fields automatically"
+      ],
+      "correct_answers": [
+        "A formatter is a form element used to display information that is not a field in the record"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "The baseline Service Catalog homepage contains links to which of the following components?",
+      "type": "single",
+      "choices": [
+        "Record Producers, Order Guides, and Catalog Items",
+        "Order Guides, Item Variables, and Workflows",
+        "Record Producers, Order Guides, and Item Variables",
+        "Order Guides, Catalog Items, and Workflows"
+      ],
+      "correct_answers": [
+        "Record Producers, Order Guides, and Catalog Items"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which one statement correctly describes Access Control rule evaluation?",
+      "type": "single",
+      "choices": [
+        "Rules are evaluated using roles. The role with the most permissions evaluates the rules first",
+        "If more than one rule applies to a row, the older rule is evaluated first",
+        "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed",
+        "Rules are evaluated from the general to the specific, so a table rule must be active to continue"
+      ],
+      "correct_answers": [
+        "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed"
+      ],
+      "correct_answers_index": [
+        2
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following are a type of client scripts supported in ServiceNow? (Choose four.)",
+      "type": "multiple",
+      "choices": [
+        "onCellEdit",
+        "onSave",
+        "onUpdate",
+        "onEdit",
+        "onChange",
+        "onLoad",
+        "onSubmit"
+      ],
+      "correct_answers": [
+        "onCellEdit",
+        "onChange",
+        "onLoad",
+        "onSubmit"
+      ],
+      "correct_answers_index": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which of the following concepts are associated with the ServiceNow CMDB? (Choose four.)",
+      "type": "multiple",
+      "choices": [
+        "Service Processes",
+        "Tables and Fields",
+        "User Permissions",
+        "A Database",
+        "The Dependency View"
+      ],
+      "correct_answers": [
+        "Service Processes",
+        "Tables and Fields",
+        "A Database",
+        "The Dependency View"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "A REQ number in the Service Catalog represents.",
+      "type": "single",
+      "choices": [
+        "The order number.",
+        "The individual item in the order.",
+        "The stage.",
+        "The task to complete."
+      ],
+      "correct_answers": [
+        "The order number."
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How is the Event Log different from the Event Registry?",
+      "type": "single",
+      "choices": [
+        "Event Log contains generated Events, the Event Registry is a table of Event definitions",
+        "Event Log is formatted in the Log style, the Event Registry displays different fields",
+        "Event Log lists Events that were triggered by integrations, the Event Registry lists the Events that were triggered during the day (24-hour period)",
+        "Event Log is the same as the Event Registry"
+      ],
+      "correct_answers": [
+        "Event Log contains generated Events, the Event Registry is a table of Event definitions"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Which one of the following statements is a recommendation from ServiceNow about Update Sets?",
+      "type": "single",
+      "choices": [
+        "Avoid using the Default Update set as an Update Set for moving customizations from instance to instance",
+        "Before moving customizations from instance to instance with Update Sets, ensure that both instances are different versions",
+        "Use the Baseline Update Set to store the contents of items after they are changed the first time",
+        "Once an Update Set is closed as \"Complete\", change it back to \"In Progress\" until it is applied to another instance"
+      ],
+      "correct_answers": [
+        "Avoid using the Default Update set as an Update Set for moving customizations from instance to instance"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "UI Policy can make fields read-only, mandatory, or hidden.",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "True"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "Record numbers have to be manually incremented",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What is a Dictionary Override?",
+      "type": "single",
+      "choices": [
+        "A Dictionary Override is an incoming customer update in an Update Set which applies to the same objects as a newer local customer update",
+        "A Dictionary Override is the addition, modification, or removal of anything that could have an effect on IT services",
+        "A Dictionary Override is a task within a workflow that requests an action before the workflow can continue",
+        "A Dictionary Override sets field properties in extended tables"
+      ],
+      "correct_answers": [
+        "A Dictionary Override sets field properties in extended tables"
+      ],
+      "correct_answers_index": [
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What are the two aspects of LDAP Integration?",
+      "type": "multiple",
+      "choices": [
+        "Data Population",
+        "Data formatting",
+        "Authorization",
+        "Authentication"
+      ],
+      "correct_answers": [
+        "Data Population",
+        "Authentication"
+      ],
+      "correct_answers_index": [
+        0,
+        3
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "What module in the Service Catalog application does an Administrator access to begin creating a new item?",
+      "type": "single",
+      "choices": [
+        "Maintain Categories",
+        "Maintain Items",
+        "Content Items",
+        "Items"
+      ],
+      "correct_answers": [
+        "Maintain Items"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "How is the Event Log different from the Event Registry?",
+      "type": "single",
+      "choices": [
+        "Event Log contains generated Events, the Event Registry is a table of Event definitions",
+        "Event Log is formatted in the Log style, the Event Registry displays different fields",
+        "Event Log lists Events that were triggered by integrations, the Event Registry lists the Events that were triggered during the day (24-hour period)",
+        "Event Log is the same as the Event Registry"
+      ],
+      "correct_answers": [
+        "Event Log contains generated Events, the Event Registry is a table of Event definitions"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": ""
+    },
+    {
+      "prompt": "ServiceNow is a single-instance, multiple tenant architecture?",
+      "type": "single",
+      "choices": [
+        "True",
+        "False"
+      ],
+      "correct_answers": [
+        "False"
+      ],
+      "correct_answers_index": [
+        1
+      ],
+      "explanation": ""
+    }
+  ]
+}
