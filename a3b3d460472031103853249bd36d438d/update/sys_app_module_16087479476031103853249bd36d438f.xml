@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Quiz Hub">a16498a0472031103853249bd36d436c</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Import Quiz (JSON)</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>410</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>https://dev167703.service-now.com/x_274343_quiz_hub_Quiz%20Import%20JSON.do</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-09 19:22:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>16087479476031103853249bd36d438f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Import Quiz (JSON)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_app_module_16087479476031103853249bd36d438f</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-09 19:47:08</sys_updated_on>
+        <timeline_page/>
+        <title>Import Quiz (JSON)</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

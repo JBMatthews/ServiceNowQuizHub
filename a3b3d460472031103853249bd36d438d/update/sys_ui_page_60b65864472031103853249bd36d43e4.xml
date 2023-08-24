@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>cms</category>
+        <client_script><![CDATA[function importQuiz(){
+	var newQuizId;
+	var fileInput = document.getElementById('jsonFileInput');
+	var file = fileInput.files[0];
+	if(file){
+		
+		if (file.type !== 'application/json'){
+			alert('Please select a valid JSON file.');
+			return;
+		}
+		
+		var reader = new FileReader();
+		reader.onload = function(event) {
+			var jsonContent = event.target.result;
+			// Call server-side script to process the JSON content
+			var quizData = JSON.parse(jsonContent);
+			var title = quizData.title;
+			var description = quizData.description;
+			if(quizData.title != "" && quizData.title != null && quizData.questions != null && quizData.questions.length > 0){
+				var ga = new GlideAjax('x_274343_quiz_hub.quizUtils');
+				ga.addParam('sysparm_name', 'importQuiz');
+				ga.addParam('title', title);
+				ga.addParam('description', description);
+				ga.getXMLAnswer(function(response){
+					var answer = JSON.parse(response);
+					if(answer != null){
+						newQuizId = answer;
+						for(i = 0; i < quizData.questions.length; i++){
+							var gaQue = new GlideAjax('x_274343_quiz_hub.quizUtils');
+							gaQue.addParam('sysparm_name', 'importQuestions');
+							gaQue.addParam('quizId', newQuizId);
+							gaQue.addParam('question', quizData.questions[i].prompt);
+							gaQue.addParam('answer_index', quizData.questions[i].correct_answers_index);
+							gaQue.addParam('answer', quizData.questions[i].correct_answers);
+							gaQue.addParam('choice1', quizData.questions[i].choices[0]);
+							gaQue.addParam('choice2', quizData.questions[i].choices[1]);
+							gaQue.addParam('choice3', quizData.questions[i].choices[2]);
+							gaQue.addParam('choice4', quizData.questions[i].choices[3]);
+							gaQue.addParam('choice5', quizData.questions[i].choices[4]);
+							gaQue.addParam('choice6', quizData.questions[i].choices[5]);
+							gaQue.addParam('explanation', quizData.questions[i].explanation);
+							gaQue.getXML(function(){});
+						}
+						document.getElementById('result').innerHTML = "IMPORTING... PLEASE WAIT... (TAKES AROUND 10 SEC)";
+						setTimeout(function(){
+							var protocol = window.location.protocol;
+							var host = window.location.host;
+							var instance = protocol + '//' + host + '/now/nav/ui/classic/params/target/x_274343_quiz_hub_quizzes.do%3Fsys_id%3D' + newQuizId;
+							window.location.href = instance;
+						}, 10000);
+					}else{
+						alert('Error getting quiz ID');
+					}
+				});
+			}else{
+				alert('Invalid JSON content. Please verify formatting of file.');
+				return;
+			}
+		};
+		reader.readAsText(file);
+	}
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_274343_quiz_hub_Quiz Import JSON.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style>
+	        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+	</style>
+	<div id="main" class="center">
+		<div class="h2">Use this page to import a JSON file containing a quiz and questions.</div>
+		<div class="h3" style="margin-bottom: 25px;">Download a template JSON file <a href="https://dev167703.service-now.com/sys_attachment.do?sys_id=bbaf6e5e47a031103853249bd36d43c7" style="margin-left: 5px;"> here.</a></div>
+		<input type="file" id="jsonFileInput" style="margin-bottom: 25px;"></input>
+		<button onclick="importQuiz()">Import</button>
+		<div id="result" style="margin-top: 25px;"></div>
+	</div>
+</j:jelly>]]></html>
+        <name>Quiz Import JSON</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 19:57:45</sys_created_on>
+        <sys_id>60b65864472031103853249bd36d43e4</sys_id>
+        <sys_mod_count>100</sys_mod_count>
+        <sys_name>Quiz Import JSON</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_ui_page_60b65864472031103853249bd36d43e4</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-11 17:22:25</sys_updated_on>
+    </sys_ui_page>
+</record_update>

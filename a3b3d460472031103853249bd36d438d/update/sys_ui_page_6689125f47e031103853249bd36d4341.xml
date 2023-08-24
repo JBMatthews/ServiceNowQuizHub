@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var urlSearchParams = new URLSearchParams(window.location.search);
+var questionId = urlSearchParams.get('sys_id');
+var main = document.getElementById('main');
+var confirmation = document.getElementById('confirmation');
+var feedbackInput = document.getElementById('feedbackInput');
+var deactivateQuestion = document.getElementById('deactivateQuestion');
+function submit(){
+	var createFB = new GlideAjax('x_274343_quiz_hub.quizUtils');
+	createFB.addParam('sysparm_name', 'createFeedback');
+	createFB.addParam('questionId', questionId);
+	createFB.addParam('feedbackInput', feedbackInput.value);
+	createFB.addParam('deactivateQuestion', deactivateQuestion.value);
+	createFB.getXMLAnswer(function (){
+	});
+	main.style = "display: none;";
+	confirmation.style = "display: flex;";
+	setTimeout(function(){
+		window.close();
+	}, 5000)
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_274343_quiz_hub_Question Feedback.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style>
+	.centered-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: left;
+			margin-bottom: 10px;
+		}
+	</style>
+	<div class="h4" id="confirmation" style="text-align: center; display: none;">Thank you for your feedback. This window will close automatically.</div>
+	<div class="centered-container" id="main">
+		<div class="h1" style="text-align: center;">Question Feedback</div>
+		<label for="feebackInput">Please provide as much information as possible, including if the questions is incorrect or outdated.</label>
+		<textarea id="feedbackInput" rows="10" cols="80" style="margin-bottom: 25px;"/>
+		<label for="deactivateQuestion">Should question be deactivated until further review?</label>
+		<select id="deactivateQuestion">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</select>
+		<div id="button-container">
+			<button id="submit" onclick="submit()" style="margin-top: 50px;">Submit</button>
+		</div>
+	</div>
+</j:jelly>]]></html>
+        <name>Question Feedback</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-14 18:23:06</sys_created_on>
+        <sys_id>6689125f47e031103853249bd36d4341</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Question Feedback</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_ui_page_6689125f47e031103853249bd36d4341</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-14 20:52:53</sys_updated_on>
+    </sys_ui_page>
+</record_update>

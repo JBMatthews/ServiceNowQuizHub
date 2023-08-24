@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_274343_quiz_hub.question_user" name="x_274343_quiz_hub.question_user">42c7a439472031103853249bd36d4302</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-09 18:11:06</sys_created_on>
+        <sys_id>02c7a439472031103853249bd36d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>42c7a439472031103853249bd36d4302</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_embedded_help_role_02c7a439472031103853249bd36d4304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-09 18:11:06</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_274343_quiz_hub_quizzes">x_274343_quiz_hub_quizzes</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>QUI</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 19:33:36</sys_created_on>
+        <sys_id>a34498a0472031103853249bd36d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>QUI</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_number_a34498a0472031103853249bd36d43b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-05 19:33:36</sys_updated_on>
+    </sys_number>
+</record_update>

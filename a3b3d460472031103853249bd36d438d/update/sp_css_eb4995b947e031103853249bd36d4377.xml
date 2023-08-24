@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>.centered-container {&#13;
+  display: none;&#13;
+  flex-direction: column;&#13;
+  align-items: center;&#13;
+  justify-content: left;&#13;
+  margin-bottom: 10px;&#13;
+}&#13;
+.button-28 {&#13;
+  appearance: none;&#13;
+  background-color: #e2e2e2;&#13;
+  border: 2px solid #1A1A1A;&#13;
+  border-radius: 15px;&#13;
+  box-sizing: border-box;&#13;
+  color: #414141;&#13;
+  cursor: pointer;&#13;
+  display: inline-block;&#13;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";&#13;
+  font-size: 16px;&#13;
+  font-weight: 600;&#13;
+  line-height: normal;&#13;
+  margin: 0;&#13;
+  min-height: 30px;&#13;
+  min-width: 0;&#13;
+  max-width: 150px;&#13;
+  outline: none;&#13;
+  padding: 16px 24px;&#13;
+  text-align: center;&#13;
+  text-decoration: none;&#13;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);&#13;
+  user-select: none;&#13;
+  -webkit-user-select: none;&#13;
+  touch-action: manipulation;&#13;
+  width: 100%;&#13;
+  will-change: transform;&#13;
+}&#13;
+&#13;
+.button-28:disabled {&#13;
+  pointer-events: none;&#13;
+}&#13;
+&#13;
+.button-28:hover {&#13;
+  color: #fff;&#13;
+  background-color: #0658d4;&#13;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;&#13;
+  transform: translateY(-2px);&#13;
+}&#13;
+&#13;
+.button-28:active {&#13;
+  box-shadow: none;&#13;
+  transform: translateY(0);&#13;
+}</css>
+        <name>quiz_css</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-09 21:49:08</sys_created_on>
+        <sys_id>eb4995b947e031103853249bd36d4377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>quiz_css</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sp_css_eb4995b947e031103853249bd36d4377</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-09 21:49:08</sys_updated_on>
+    </sp_css>
+</record_update>
