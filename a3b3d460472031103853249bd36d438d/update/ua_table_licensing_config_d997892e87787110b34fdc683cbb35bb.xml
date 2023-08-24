@@ -4,22 +4,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_274343_quiz_hub_question</name>
+        <name>x_274343_quiz_hub_question_feedback</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-08-09 18:11:07</sys_created_on>
-        <sys_id>dec76079472031103853249bd36d43c9</sys_id>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-14 18:09:42</sys_created_on>
+        <sys_id>d997892e87787110b34fdc683cbb35bb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_274343_quiz_hub_question</sys_name>
+        <sys_name>x_274343_quiz_hub_question_feedback</sys_name>
         <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
-        <sys_update_name>ua_table_licensing_config_dec76079472031103853249bd36d43c9</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-08-09 18:11:07</sys_updated_on>
+        <sys_update_name>ua_table_licensing_config_d997892e87787110b34fdc683cbb35bb</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-14 18:09:42</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

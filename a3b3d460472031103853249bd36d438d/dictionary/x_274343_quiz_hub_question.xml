@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7fa76835472031103853249bd36d43f1" label="Question" max_length="40" name="x_274343_quiz_hub_question" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Answer" max_length="400" name="answer" type="string_full_utf8"/>
+        <element label="Answer Index" max_length="40" name="answer_index" type="string_full_utf8"/>
+        <element label="Choice 1" max_length="400" name="choice1" type="string_full_utf8"/>
+        <element label="Choice 2" max_length="400" name="choice2" type="string_full_utf8"/>
+        <element label="Choice 3" max_length="400" name="choice3" type="string_full_utf8"/>
+        <element label="Choice 4" max_length="400" name="choice4" type="string_full_utf8"/>
+        <element label="Choice 5" max_length="400" name="choice5" type="string_full_utf8"/>
+        <element label="Choice 6" max_length="400" name="choice6" type="string_full_utf8"/>
+        <element label="Explanation" max_length="400" name="explanation" type="string_full_utf8"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Question" max_length="400" name="question" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Quiz" max_length="32" name="quiz" reference="x_274343_quiz_hub_quizzes" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="active" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="100" value="active"/>
+                <element inactive_on_update="false" label="Under Review" sequence="200" value="review"/>
+                <element inactive_on_update="false" label="Inactive" sequence="300" value="inactive"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="quiz"/>
+        </index>
+    </element>
+</database>

@@ -1,80 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="review_results" table="x_274343_quiz_hub_question_feedback" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_274343_quiz_hub_question" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>review_results</element>
-            <name>x_274343_quiz_hub_question_feedback</name>
+            <element>state</element>
+            <name>x_274343_quiz_hub_question</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>jeremy.fisher</sys_created_by>
-            <sys_created_on>2023-08-14 18:16:41</sys_created_on>
-            <sys_id>2009121f47e031103853249bd36d43c6</sys_id>
+            <sys_created_on>2023-08-14 18:03:25</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>review_results</sys_name>
+            <sys_name>state</sys_name>
             <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
             <sys_policy/>
             <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
-            <sys_update_name>sys_choice_x_274343_quiz_hub_question_feedback_review_results</sys_update_name>
+            <sys_update_name>sys_choice_x_274343_quiz_hub_question_state</sys_update_name>
             <sys_updated_by>jeremy.fisher</sys_updated_by>
-            <sys_updated_on>2023-08-14 18:16:41</sys_updated_on>
+            <sys_updated_on>2023-08-14 18:03:25</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>review_results</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Question Verified</label>
+            <label>Active</label>
             <language>en</language>
-            <name>x_274343_quiz_hub_question_feedback</name>
+            <name>x_274343_quiz_hub_question</name>
             <sequence>100</sequence>
             <synonyms/>
             <sys_created_by>jeremy.fisher</sys_created_by>
-            <sys_created_on>2023-08-14 18:16:53</sys_created_on>
+            <sys_created_on>2023-08-14 18:03:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>e809521f47e031103853249bd36d43ed</sys_id>
+            <sys_id>ebe5161747e031103853249bd36d4302</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>jeremy.fisher</sys_updated_by>
-            <sys_updated_on>2023-08-14 18:16:59</sys_updated_on>
-            <value>question_verified</value>
+            <sys_updated_on>2023-08-14 18:03:29</sys_updated_on>
+            <value>active</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>review_results</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Question Updated</label>
+            <label>Under Review</label>
             <language>en</language>
-            <name>x_274343_quiz_hub_question_feedback</name>
+            <name>x_274343_quiz_hub_question</name>
             <sequence>200</sequence>
             <synonyms/>
             <sys_created_by>jeremy.fisher</sys_created_by>
-            <sys_created_on>2023-08-14 18:16:41</sys_created_on>
+            <sys_created_on>2023-08-14 18:03:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2df89edb47e031103853249bd36d4354</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_id>16f51e1b47e031103853249bd36d43ed</sys_id>
+            <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>jeremy.fisher</sys_updated_by>
-            <sys_updated_on>2023-08-14 18:17:01</sys_updated_on>
-            <value>question_updated</value>
+            <sys_updated_on>2023-08-14 18:03:41</sys_updated_on>
+            <value>review</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>review_results</element>
+            <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Question Deactivated</label>
+            <label>Inactive</label>
             <language>en</language>
-            <name>x_274343_quiz_hub_question_feedback</name>
+            <name>x_274343_quiz_hub_question</name>
             <sequence>300</sequence>
             <synonyms/>
             <sys_created_by>jeremy.fisher</sys_created_by>
-            <sys_created_on>2023-08-14 18:17:11</sys_created_on>
+            <sys_created_on>2023-08-14 18:03:45</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>eb09d21f47e031103853249bd36d438c</sys_id>
+            <sys_id>9506161747e031103853249bd36d439c</sys_id>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>jeremy.fisher</sys_updated_by>
-            <sys_updated_on>2023-08-14 18:17:22</sys_updated_on>
-            <value>question_deactivated</value>
+            <sys_updated_on>2023-08-14 18:03:49</sys_updated_on>
+            <value>inactive</value>
         </sys_choice>
     </sys_choice>
 </record_update>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
     <sp_css_include action="INSERT_OR_UPDATE">
-        <lazy_load>false</lazy_load>
         <name>quiz_css</name>
         <source>local</source>
         <sp_css display_value="quiz_css">eb4995b947e031103853249bd36d4377</sp_css>

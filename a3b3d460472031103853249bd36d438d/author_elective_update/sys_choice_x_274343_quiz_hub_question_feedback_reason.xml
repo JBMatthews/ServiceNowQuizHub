@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>jeremy.fisher</sys_created_by>
             <sys_created_on>2023-08-14 18:12:34</sys_created_on>
-            <sys_id>841856db47e031103853249bd36d430a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>reason</sys_name>
             <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>

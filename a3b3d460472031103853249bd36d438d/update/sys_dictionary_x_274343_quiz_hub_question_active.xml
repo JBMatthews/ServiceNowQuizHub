@@ -2,7 +2,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="active" table="x_274343_quiz_hub_question">
         <active>true</active>
         <array>false</array>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>jeremy.fisher</sys_created_by>
         <sys_created_on>2023-08-14 17:38:06</sys_created_on>
-        <sys_id>48109edf47a031103853249bd36d432d</sys_id>
         <sys_name>Active</sys_name>
         <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
         <sys_policy/>

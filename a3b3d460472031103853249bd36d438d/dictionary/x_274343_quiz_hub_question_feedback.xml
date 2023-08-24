@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0c47569b47e031103853249bd36d4378" label="Question Feedback" max_length="40" name="x_274343_quiz_hub_question_feedback" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Deactivate Question" max_length="40" name="deactivate" type="boolean"/>
+        <element label="Feedback Information" max_length="400" name="feedback_information" type="string_full_utf8"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Question" max_length="32" name="question" reference="x_274343_quiz_hub_question" type="reference"/>
+        <element label="Review Notes" max_length="250" name="review_notes" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Review Results" max_length="40" name="review_results" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Question Verified" sequence="100" value="question_verified"/>
+                <element inactive_on_update="false" label="Question Updated" sequence="200" value="question_updated"/>
+                <element inactive_on_update="false" label="Question Deactivated" sequence="300" value="question_deactivated"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="pending_review" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Review" sequence="100" value="pending_review"/>
+                <element inactive_on_update="false" label="Review In Progress" sequence="200" value="in_progress"/>
+                <element inactive_on_update="false" label="Review Complete" sequence="300" value="complete"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="question"/>
+        </index>
+    </element>
+</database>
