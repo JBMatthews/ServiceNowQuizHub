@@ -178,6 +178,7 @@ function startQuiz(){
 function loadQuestion(){
 	nextButton.disabled = true;
 	submitButton.disabled = false;
+	submitButton.classList.remove("disabled");
 	explanationContainer.innerHTML = "";
 	resetButtons();
 	selectedChoices = [];
@@ -229,6 +230,7 @@ function loadQuestion(){
 function submit(){
 	submitButton.disabled = true;
 	nextButton.disabled = false;
+	submitButton.classList.add("disabled");
 	selectedChoices = selectedChoices.sort();
 	if(selectedChoices == question.correct_answers.toString()){
 		qResult = true;
@@ -348,128 +350,187 @@ function openFeedbackWindow(){
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
    <style>
+      /* Global Styles */
       body {
-         font-family: Arial, sans-serif;
-         background-color: #f5f5f5;
-         margin: 0;
-         padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
       }
+      /* Centered Container Styles */
       .centered-container {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
       }
+      /* Main Menu Styles */
       #main-menu {
-         text-align: center;
-         padding: 20px;
+      text-align: center;
+      padding: 20px;
       }
+      /* Quiz Info Styles */
       #quiz-title {
-         font-size: 24px;
-         margin-bottom: 10px;
+      font-size: 24px;
+      margin-bottom: 10px;
       }
       #quiz-description {
-         font-size: 18px;
-         margin-bottom: 20px;
+      font-size: 18px;
+      margin-bottom: 20px;
       }
       #quiz-numquestions {
-         font-size: 16px;
+      font-size: 16px;
       }
       #numberOfQuestions {
-         width: 60px;
-         margin: 10px 0;
-         padding: 5px;
+      width: 60px;
+      margin: 10px 0;
+      padding: 5px;
       }
-      #load-button-container {
-         margin-top: 20px;
-      }
-      #load-button, #main-menu-button {
-         background-color: #007bff;
-         color: white;
-         border: none;
-         padding: 10px 20px;
-         cursor: pointer;
-         border-radius: 4px;
-      }
-      #load-button {
-         margin-right: 10px;
-      }
+      /* Quiz Container Styles */
       #quiz-container {
-         display: none;
-         text-align: center;
-         padding: 20px;
+      display: none;
+      text-align: center;
+      padding: 20px;
       }
       #question {
-         font-size: 20px;
-         margin-bottom: 20px;
+	  text: red !important;
+      font-size: 20px;
+	  font-weight: bold;
+	  margin-bottom: 20px;
       }
+      /* Flashcard Border */
+      #card-border { 
+      padding: 10px 20px 20px 20px;
+      margin: 10px 10px 20px 10px;
+      border: 1px solid #BFBFBF;
+      background-color: white;
+      box-shadow: 10px 10px 5px #aaaaaa;
+      }
+       
       #choices-container {
-         margin-bottom: 20px;
-         margin-top: 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+	  padding: 0px 0px 0px 0px;
+	  /* border: 2px dotted #FF0000; */
+
+      }
+      /* Explanation Container Styles */
+      #explanation-container {
+      margin-top: 20px;
+      }
+      /* Feedback Link Styles */
+      #feedbackLink {
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+      }
+      /* Debug Container Styles */
+      #debug {
+      margin-top: 20px;
+      display: none;
+      }
+      /* -- Button Styles -- */
+      #button-container {
+	   margin-bottom: 50px
+	  }
+	  /* Common */
+	  #load-button,
+      #submit-btn,
+      #next,
+      #main-menu-button,
+      #choices-container button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 0px;
+      transition: background-color 0.3s ease, color 0.3s ease;
       }
       #choices-container button {
-         background-color: #ffffff;
-         border: 2px solid #000000;
-         color: #000000;
-         padding: 10px 20px;
-         margin: 5px;
-         cursor: pointer;
-         display: inline-block;
-	   }
-	   
-
-      #button-container button {
-         background-color: #28a745;
-         color: white;
-         border: none;
-         padding: 10px 20px;
-         cursor: pointer;
-         margin-right: 10px;
-         border-radius: 4px;
+      font-style: italic;
       }
-      #explanation-container {
-         margin-top: 20px;
+      /* Take Quiz Button Styles */
+      #load-button {
+      background-color: #555;
+      color: white;
+      border: none;
       }
-      #feedbackLink {
-         margin-top: 20px;
-         color: #007bff;
-         text-decoration: none;
+      #load-button:hover {
+      background-color: #777;
       }
-      #debug {
-         margin-top: 20px;
-         display: none;
+      #load-button:active {
+      background-color: #333;
       }
-      /* Button styles */
-      #submit-btn, #next {
-         background-color: #28a745;
-         color: white;
-         border: none;
-         padding: 10px 20px;
-         cursor: pointer;
-         margin-right: 10px;
-         border-radius: 4px;
-         transition: background-color 0.3s ease, color 0.3s ease;
+      /* Main Menu Button Styles */
+      #main-menu-button {
+      border: 1px solid #555;
+      color: #555;
       }
-      /* Button hover effect */
-      #submit-btn:hover, #next:hover {
-         background-color: #4CAF50; /* Lighter color on hover */
+      #main-menu-button:hover {
+      background-color: #777;
       }
-      /* Button click effect */
-      #submit-btn:active, #next:active {
-         background-color: #1e7e34; /* Darker color on click */
+      #main-menu-button:active {
+      background-color: #333;
+      }
+      /* Answer Choices Button Styles */
+      #choices-container button {
+      border: 2px solid #555;
+      color: #333;
+      margin: 5px;
+      display: inline-block;
+      background-color: #fff;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+      #choices-container button:hover {
+      background-color: #777;
+      border-color: #777;
+      }
+      #choices-container button:active {
+      background-color: #333;
+      border-color: #333;
+      }
+      /* Submit Button Styles */
+      #submit-btn {
+      background-color: #555;
+      color: white;
+      border: none;
+      margin-right: 10px;
+      }
+      #submit-btn:hover {
+      background-color: #777;
+      }
+      #submit-btn:active {
+      background-color: #333;
+      }
+      #submit-btn.disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+      }
+      /* Next Button Styles */
+      #next {
+      color: #555;
+      background-color: #888;
+      border: none;
+      margin-right: 10px;
+      }
+      #next:hover {
+      background-color: #777;
+      }
+      #next:active {
+      background-color: #333;
       }
    </style>
    <div id="main-menu">
       <h1>Main Menu</h1>
-      <h3>Make quiz selection:</h3>
+      <h3>Select Exam:</h3>
       <div id="quiz-row"></div>
    </div>
    <div class="centered-container" id="quiz-info-container" style="display: none;">
       <div class="h1" id="quiz-title"></div>
       <div class="h3" id="quiz-description"></div>
       <div class="h3" id="quiz-numquestions"></div>
-      <label for="numberOfQuestions">How many questions would you like?</label>
+      <label for="numberOfQuestions">Number of questions requested:</label>
       <input type="number" id="numberOfQuestions" />
       <div id="load-button-container">
          <button id="load-button" onclick="loadQuiz(quizData)">Take Quiz</button>
@@ -478,27 +539,29 @@ function openFeedbackWindow(){
    </div>
    <div class="centered-container" id="quiz-container">
       <div class="h1" id="quiz-title2"></div>
-      <div id="questions"></div>
-      <div id="question-container">
-         <h2 id="question"></h2>
-      </div>
-      <div id="choices-container">
-		  <button id="choice0" onclick="choiceClicked('0')">1</button>
-		  <br></br>
-		  <button id="choice1" onclick="choiceClicked('1')">2</button>
-		  <br></br>
-		  <button id="choice2" onclick="choiceClicked('2')">3</button>
-		  <br></br>
-		  <button id="choice3" onclick="choiceClicked('3')">4</button>
-		  <br></br>
-		  <button id="choice4" onclick="choiceClicked('4')">5</button>
-		  <br></br>
-		  <button id="choice5" onclick="choiceClicked('5')">6</button>
-		  <br></br>
-      </div>
+      <div id="card-border">
+         <div id="questions"></div>
+         <div id="question-container">
+            <h2 id="question"></h2>
+         </div>
+         <div id="choices-container">
+            <button id="choice0" onclick="choiceClicked('0')">1</button>
+            <br></br>
+            <button id="choice1" onclick="choiceClicked('1')">2</button>
+            <br></br>
+            <button id="choice2" onclick="choiceClicked('2')">3</button>
+            <br></br>
+            <button id="choice3" onclick="choiceClicked('3')">4</button>
+            <br></br>
+            <button id="choice4" onclick="choiceClicked('4')">5</button>
+            <br></br>
+            <button id="choice5" onclick="choiceClicked('5')">6</button>
+            <br></br>
+         </div>
       <div id="button-container">
          <button id="submit-btn" onclick="submit()">Submit</button>
-         <button id="next" onclick="loadQuestion(quizData, questions, numQuestions)">Next</button>
+         <button id="next" onclick="loadQuestion(quizData, questions, numQuestions)">Next ></button>
+      </div>
       </div>
       <div id="explanation-container"></div>
       <a id="feedbackLink" href="#" onclick="openFeedbackWindow()">Incorrect or outdated question?</a>
@@ -511,13 +574,13 @@ function openFeedbackWindow(){
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-05 21:06:22</sys_created_on>
         <sys_id>e0c8ace4476031103853249bd36d43b1</sys_id>
-        <sys_mod_count>211</sys_mod_count>
+        <sys_mod_count>280</sys_mod_count>
         <sys_name>Quiz</sys_name>
         <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
         <sys_update_name>sys_ui_page_e0c8ace4476031103853249bd36d43b1</sys_update_name>
-        <sys_updated_by>jeremy.fisher</sys_updated_by>
-        <sys_updated_on>2023-08-21 14:13:39</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-27 15:32:58</sys_updated_on>
     </sys_ui_page>
 </record_update>
