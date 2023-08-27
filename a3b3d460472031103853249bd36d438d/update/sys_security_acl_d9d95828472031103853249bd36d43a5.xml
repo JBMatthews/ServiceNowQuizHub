@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_274343_quiz_hub_Quiz Import JSON</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 19:57:45</sys_created_on>
+        <sys_id>d9d95828472031103853249bd36d43a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_274343_quiz_hub_Quiz Import JSON</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_security_acl_d9d95828472031103853249bd36d43a5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-05 19:57:45</sys_updated_on>
+        <type display_value="ui_page">ui_page</type>
+    </sys_security_acl>
+</record_update>

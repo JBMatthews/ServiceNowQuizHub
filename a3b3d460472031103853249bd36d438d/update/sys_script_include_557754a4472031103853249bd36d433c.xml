@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_274343_quiz_hub.quizUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>quizUtils</name>
+        <script><![CDATA[var quizUtils = Class.create();
+quizUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	importQuiz: function(){
+		var title = this.getParameter('title');
+		var description = this.getParameter('description');
+		var gr = new GlideRecord('x_274343_quiz_hub_quizzes');
+		gr.initialize();
+		gr.quiz_title = title;
+		gr.description = description;
+		var newQuizId = gr.insert();
+		return JSON.stringify(newQuizId);
+	},
+	
+	importQuestions: function(){
+		var quizId = this.getParameter('quizId');
+		var question = this.getParameter('question');
+		var answer_index = this.getParameter('answer_index');
+		var answer = this.getParameter('answer');
+		var choice1 = this.getParameter('choice1');
+		var choice2 = this.getParameter('choice2');
+		var choice3 = this.getParameter('choice3');
+		var choice4 = this.getParameter('choice4');
+		var choice5 = this.getParameter('choice5');
+		var choice6 = this.getParameter('choice6');
+		var explanation = this.getParameter('explanation');
+		var grQuiz = new GlideRecord('x_274343_quiz_hub_quizzes');
+		var gr = new GlideRecord('x_274343_quiz_hub_question');
+		gr.initialize();
+		gr.question = question;
+		gr.answer_index = answer_index;
+		gr.answer = answer;
+		gr.choice1 = choice1;
+		gr.choice2 = choice2;
+		gr.choice3 = choice3;
+		gr.choice4 = choice4;
+		gr.choice5 = choice5;
+		gr.choice6 = choice6;
+		gr.explanation = explanation;
+		gr.quiz = quizId;
+		gr.insert();
+	},
+	
+	loadQuizList: function(){
+		var quizList = [];
+		var grQuiz = new GlideRecord('x_274343_quiz_hub_quizzes');
+		grQuiz.addQuery('state', 'active');
+		grQuiz.query();
+		while(grQuiz.next()){
+			quizList.push({'title': grQuiz.quiz_title.toString(), 'sys_id': grQuiz.sys_id.toString()});
+		}
+		return JSON.stringify(quizList);
+	},
+	
+	loadQuizInfo: function(){
+		var sys_id = this.getParameter('sys_id');
+		var gr = new GlideRecord('x_274343_quiz_hub_quizzes');
+		gr.addQuery('sys_id', sys_id);
+		gr.query();
+		if(gr.next()){
+			var name = gr.created_by.first_name + " " + gr.created_by.last_name;
+			var quizInfo = {};
+			quizInfo.title = gr.quiz_title.toString();
+			quizInfo.description = gr.description.toString();
+			quizInfo.updated = gr.sys_updated_on.toString();
+			quizInfo.createdBy = name;
+			return JSON.stringify(quizInfo);
+		}else{
+			return null;
+		}
+	},
+	
+	loadQuiz: function(){
+		var quiz = {};
+		var title = this.getParameter('title');
+		var sys_id = this.getParameter('sys_id');
+		var gr = new GlideRecord('x_274343_quiz_hub_question');
+		gr.addQuery('quiz.sys_id', sys_id);
+		gr.addQuery('state', 'active');
+		gr.query();
+		if(gr.next()){
+			quiz.title = gr.quiz.quiz_title.toString();
+			quiz.questions = [];
+			while(gr.next()){
+				var answers = gr.answer_index.split(',');
+				quiz.questions.push({
+					sys_id: gr.sys_id.toString(),
+					prompt: gr.question.toString(), 
+					explanation: gr.explanation.toString(), 
+					choices: [gr.choice1.toString(), gr.choice2.toString(), gr.choice3.toString(), gr.choice4.toString(), gr.choice5.toString(), gr.choice6.toString()], 
+					correct_answers: answers
+				});
+			}
+			return JSON.stringify(quiz);
+		}
+	},
+	
+	getQuestionCount: function(){
+		var sys_id = this.getParameter('sys_id');
+		var ga = new GlideAggregate('x_274343_quiz_hub_question');
+		ga.addQuery('quiz', sys_id);
+		ga.addQuery('state', 'active');
+		ga.addAggregate('COUNT');
+		ga.query();
+		if (ga.next()) {
+			var numberOfRecords = ga.getAggregate('COUNT');
+			return numberOfRecords;
+		} else {
+			gs.info('No records found in the related list.');
+		}
+	},
+	createFeedback: function(){
+		var questionId = this.getParameter('questionId');
+		var feedbackInput = this.getParameter('feedbackInput');
+		var deactivateQuestion = this.getParameter('deactivateQuestion');
+		var newFB = new GlideRecord('x_274343_quiz_hub_question_feedback');
+		newFB.initialize();
+		newFB.question = questionId;
+		newFB.feedback_information = feedbackInput;
+		if(deactivateQuestion == "yes"){
+			newFB.deactivate = true;
+		}else{
+			newFB.deactivate = false;
+		}
+		newFB.insert();
+	},
+	
+	setQuestionState: function(state, sys_id){
+		var questionGr = new GlideRecord('x_274343_quiz_hub_question');
+		questionGr.addQuery('sys_id', sys_id);
+		questionGr.query();
+		if(questionGr.next()){
+			questionGr.state = state;
+			questionGr.update();
+		}
+	},
+	
+    type: 'quizUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 19:47:46</sys_created_on>
+        <sys_id>557754a4472031103853249bd36d433c</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name>quizUtils</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_script_include_557754a4472031103853249bd36d433c</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-14 20:54:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[/**
+ * This script controls the functionality of the quiz application.
+ * It loads and displays quiz data, handles user interactions, and calculates the quiz score.
+ * 
+ * The script uses various HTML elements, such as buttons and containers, to display quiz information and handle user input.
+ * It also makes use of GlideAjax to interact with the ServiceNow platform and retrieve quiz data.
+ * 
+ * The main functions of this script are:
+ * - loadQuizList: Loads the list of available quizzes and displays buttons for each quiz.
+ * - loadQuizInfo: Loads the information for a specific quiz and displays it on the screen.
+ * - loadQuiz: Loads the selected quiz and starts the quiz.
+ * - loadQuestion: Loads the next question in the quiz and displays it on the screen.
+ * - submit: Submits the user's selected answers for the current question and displays the result.
+ * - showResults: Displays the final score and finishes the quiz.
+ * - getRandomInt: Generates a random integer within a specified range.
+ * - createButton: Creates a button element for a quiz.
+ * - showMainMenu: Displays the main menu of the quiz application.
+ * - setButtonColor: Sets the border color of a button element.
+ * - setButtonBG: Sets the background color of a button element.
+ * - choiceClicked: Handles the click event for a choice button in a question.
+ * - removeQuestion: Removes a question from the quiz data.
+ * - openFeedbackWindow: Opens the feedback page for a question in a new window.
+ */
+
+// Initialize variables
+var choiceStatuses = {
+	0: false,
+	1: false,
+	2: false,
+	3: false,
+	4: false,
+	5: false
+};
+var selectedChoices = [];
+var questions = 0;
+var mainMenuContainer = document.getElementById('main-menu');
+var questionContainer = document.getElementById('question-container');
+var choicesContainer = document.getElementById('choices-container');
+var debugContainer = document.getElementById('debug');
+var questionsStatus = document.getElementById('questions');
+var quizContainer = document.getElementById('quiz-container');
+var quizInfoContainer = document.getElementById('quiz-info-container');
+var quizTitle = document.getElementById('quiz-title');
+var quizDate = document.getElementById('quiz-date');
+var quizDev = document.getElementById('quiz-dev');
+var quizDescription = document.getElementById('quiz-description');
+var quizRow = document.getElementById('quiz-row');
+var quizNumQuestions = document.getElementById('quiz-numquestions');
+var explanationContainer = document.getElementById('explanation-container');
+var submitButton = document.getElementById('submit-btn');
+var nextButton = document.getElementById('next');
+var numAnswers = document.getElementById('numAnswers');
+var question;
+var qResult;
+var score = 0;
+var numQuestions = 0;
+var currentQuiz = {};
+var quizData = 'test';
+
+loadQuizList();
+
+/**
+ * Loads the list of available quizzes and displays buttons for each quiz.
+ * The quiz list is retrieved from the server using GlideAjax.
+ */
+function loadQuizList(){
+	var gaList = new GlideAjax('x_274343_quiz_hub.quizUtils');
+	gaList.addParam('sysparm_name', 'loadQuizList');
+	gaList.getXML(function(response){
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		debugContainer.innerHTML = answer;
+		if (answer && answer !== "") {
+			try {
+				quizzes = JSON.parse(answer);
+				// Now 'quizzes' array contains the loaded quiz URLs
+				for(i = 0; i < quizzes.length; i++){
+					debugContainer.innerHTML = "JF - " + quizzes[i].title;
+					var name = quizzes[i].title;
+					var sys_id = quizzes[i].sys_id;
+					var buttonElement = createButton(name, sys_id);
+					quizRow.appendChild(buttonElement);
+				}
+
+			} catch (error) {
+				mainMenuContainer.innerHTML = "Error parsing quiz data: " + error;
+			}
+		} else {
+			mainMenuContainer.innerHTML = "No quiz data found." + answer;
+		}
+	});
+}
+
+/**
+ * Loads the information for a specific quiz and displays it on the screen.
+ * 
+ * @param {string} sys_id - The sys_id of the quiz to load.
+ */
+function loadQuizInfo(sys_id){
+	quizContainer.style = 'display: none;';
+	var numOfQuestions;
+	var numQuestionsGa = new GlideAjax('x_274343_quiz_hub.quizUtils');
+	numQuestionsGa.addParam('sysparm_name', 'getQuestionCount');
+	numQuestionsGa.addParam('sys_id', sys_id);
+	numQuestionsGa.getXMLAnswer(function(response){
+		var answer = JSON.parse(response);
+		numOfQuestions = answer;
+	});
+	mainMenuContainer.style = 'display: none;';
+	setTimeout(function(){
+		quizInfoContainer.style = 'display: flex';
+		var ga = new GlideAjax('x_274343_quiz_hub.quizUtils');
+		ga.addParam('sysparm_name', 'loadQuizInfo');
+		ga.addParam('sys_id', sys_id);
+		ga.getXMLAnswer(function(response){
+			var answer = JSON.parse(response);
+			if(answer != null){
+				quizTitle.innerHTML = answer.title;
+				quizDescription.innerHTML = answer.description;
+				quizNumQuestions.innerHTML = "Number of questions: " + numOfQuestions;
+				currentQuiz = {title: answer.title, sys_id: sys_id};
+			}else{
+				alert('Error loading quiz info, please try again.');
+				showMainMenu();
+			}
+		});
+	}, 1000);
+}
+
+/**
+ * Loads the selected quiz and starts the quiz.
+ */
+function loadQuiz(){
+	score = 0;
+	var numQuestionsInput = document.getElementById('numberOfQuestions');
+	numQuestions = parseInt(numQuestionsInput.value);
+	quizContainer.style = 'display: flex';
+	quizInfoContainer.style = 'display: none';
+	//load questions here
+	var ga = new GlideAjax('x_274343_quiz_hub.quizUtils');
+	ga.addParam('sysparm_name', 'loadQuiz');
+	ga.addParam('title', currentQuiz.title);
+	ga.addParam('sys_id', currentQuiz.sys_id);
+	ga.getXML(function (response){
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		quizData = JSON.parse(answer);
+		//startQuiz();
+		document.getElementById('quiz-title2').innerHTML = quizData.title;
+		questions = 0;
+		if(!isNaN(numQuestions) && numQuestions > 0 && numQuestions <= quizData.questions.length){
+			loadQuestion();
+		}else{
+			alert('Please enter a valid number of questions');
+			loadQuizInfo(currentQuiz.sys_id);
+		}
+	});
+}
+
+/**
+ * Starts the quiz by loading the first question.
+ */
+function startQuiz(){
+	document.getElementById('quiz-title2').innerHTML = quizData.title;
+	questions = 0;
+	if(!isNaN(numQuestions) && numQuestions > 0 && numQuestions <= quizData.questions.length){
+		loadQuestion();
+	}else{
+		alert('Please enter a valid number of questions');
+		loadQuizInfo();
+	}
+}
+
+/**
+ * Loads the next question in the quiz and displays it on the screen.
+ */
+function loadQuestion(){
+	nextButton.disabled = true;
+	submitButton.disabled = false;
+	submitButton.classList.remove("disabled");
+	explanationContainer.innerHTML = "";
+	resetButtons();
+	selectedChoices = [];
+	questionsStatus.innerHTML = "Question " + questions + "/" + numQuestions;
+	if (questions < numQuestions){
+		var rand = getRandomInt(quizData.questions.length);
+		question = quizData.questions[rand];
+		document.getElementById('question-container').innerHTML = question.prompt + " (Choose " + question.correct_answers.length + ")";
+		document.getElementById('choice0').textContent = question.choices[0];
+		document.getElementById('choice1').textContent = question.choices[1];
+		
+		if(question.choices[2] == ""){
+			document.getElementById('choice2').style.display = 'none';
+		}else{
+			document.getElementById('choice2').style.display = 'inline-block';
+			document.getElementById('choice2').textContent = question.choices[2];
+		}
+		
+		if(question.choices[3] == ""){
+			document.getElementById('choice3').style.display = 'none';
+		}else{
+			document.getElementById('choice3').style.display = 'inline-block';
+			document.getElementById('choice3').textContent = question.choices[3];
+		}
+		
+		if(question.choices[4] == ""){
+			document.getElementById('choice4').style.display = 'none';
+		}else{
+			document.getElementById('choice4').style.display = 'inline-block';
+			document.getElementById('choice4').textContent = question.choices[4];
+		}
+		
+		if(question.choices[5] == ""){
+			document.getElementById('choice5').style.display = 'none';
+		}else{
+			document.getElementById('choice5').style.display = 'inline-block';
+			document.getElementById('choice5').textContent = question.choices[5];
+		}
+		debugContainer.innerHTML = "DEBUG: " + question.sys_id;
+		removeQuestion(rand);
+	}else{
+		showResults();
+	}
+}
+
+/**
+ * Submits the user's selected answers for the current question and displays the result.
+ */
+function submit(){
+	submitButton.disabled = true;
+	nextButton.disabled = false;
+	submitButton.classList.add("disabled");
+	selectedChoices = selectedChoices.sort();
+	if(selectedChoices == question.correct_answers.toString()){
+		qResult = true;
+	}else{
+		qResult = false;		
+	}
+	//Change incorrect selected answers red
+	for (i = 0; i < selectedChoices.length; i++){
+		if( question.correct_answers.indexOf(selectedChoices[i]) == -1){
+			setButtonBG('choice' + selectedChoices[i], 'red');
+		}
+	}
+
+	//Change correct answers green
+	for (i = 0; i < question.correct_answers.length; i++){
+		setButtonBG('choice' + question.correct_answers[i], 'green');
+	}
+	if (qResult){
+		score++;
+	}
+	questions++;
+	explanationContainer.innerHTML = "EXPLANATION: " + question.explanation;
+}
+
+/**
+ * Creates buttons for each choice
+ */
+function createButton(name, sys_id){
+	var buttonElement = document.createElement("button");
+	buttonElement.textContent = name;
+	buttonElement.style = 'margin-right: 10px; margin-left: 10px;';
+	buttonElement.id = name;
+	buttonElement.onclick = function(){loadQuizInfo(sys_id);};
+	return buttonElement;
+}
+
+function showMainMenu(){
+	quizInfoContainer.style = 'display: none';
+	quizContainer.style = 'display: none;';
+	mainMenuContainer.style = 'display: block; text-align: center;';
+}
+
+function getRandomInt(max){
+	return Math.floor(Math.random() * max);
+}
+
+function showResults(){
+	alert("Quiz finished.  You scored " + score + "/" + numQuestions);
+	showMainMenu();
+}
+
+function resetButtons(){
+	setButtonBG('choice0', 'none');
+	setButtonBG('choice1', 'none');
+	setButtonBG('choice2', 'none');
+	setButtonBG('choice3', 'none');
+	setButtonBG('choice4', 'none');
+	setButtonBG('choice5', 'none');
+	setButtonColor('choice0', 'black');
+	setButtonColor('choice1', 'black');
+	setButtonColor('choice2', 'black');
+	setButtonColor('choice3', 'black');
+	setButtonColor('choice4', 'black');
+	setButtonColor('choice5', 'black');
+	choiceStatuses = {
+		0: false,
+		1: false,
+		2: false,
+		3: false,
+		4: false,
+		5: false
+	};
+}
+
+function setButtonColor(button, color){
+	document.getElementById(button).style.borderColor = color;
+	document.getElementById(button).style.borderWidth = "2px";
+}
+
+function setButtonBG(button, color){
+	document.getElementById(button).style = "background-color: " + color;
+}
+
+function choiceClicked(num){
+	if(choiceStatuses[num] == false){
+		if(selectedChoices.length != question.correct_answers.length){
+			setButtonColor('choice' + num, 'blue');
+			choiceStatuses[num] = true;
+			selectedChoices.push(num);
+		}
+	} else {
+		setButtonColor('choice' + num, 'black');
+		choiceStatuses[num] = false;
+		var index = selectedChoices.indexOf(num);
+		selectedChoices.splice(index, 1);
+	}
+}
+
+function removeQuestion(num){
+	quizData.questions.splice(num, 1);
+}
+
+function openFeedbackWindow(){
+	// Get the question information
+	var questionId = question.sys_id;
+
+	// Construct the URL of the Question Feedback page with query parameters
+	var feedbackPageURL = '/x_274343_quiz_hub_Question%20Feedback.do?sys_id=' + questionId;
+
+	// Open the feedback page in a new window
+	window.open(feedbackPageURL, '_blank', 'height=400,width=600');
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_274343_quiz_hub_Quiz.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+   <style>
+      /* Global Styles */
+      body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      }
+      /* Centered Container Styles */
+      .centered-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      }
+      /* Main Menu Styles */
+      #main-menu {
+      text-align: center;
+      padding: 20px;
+      }
+      /* Quiz Info Styles */
+      #quiz-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      }
+      #quiz-description {
+      font-size: 18px;
+      margin-bottom: 20px;
+      }
+      #quiz-numquestions {
+      font-size: 16px;
+      }
+      #numberOfQuestions {
+      width: 60px;
+      margin: 10px 0;
+      padding: 5px;
+      }
+      /* Quiz Container Styles */
+      #quiz-container {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      }
+      #question {
+	  text: red !important;
+      font-size: 20px;
+	  font-weight: bold;
+	  margin-bottom: 20px;
+      }
+      /* Flashcard Border */
+      #card-border { 
+      padding: 10px 20px 20px 20px;
+      margin: 10px 10px 20px 10px;
+      border: 1px solid #BFBFBF;
+      background-color: white;
+      box-shadow: 10px 10px 5px #aaaaaa;
+      }
+       
+      #choices-container {
+      margin-bottom: 20px;
+      margin-top: 20px;
+	  padding: 0px 0px 0px 0px;
+	  /* border: 2px dotted #FF0000; */
+
+      }
+      /* Explanation Container Styles */
+      #explanation-container {
+      margin-top: 20px;
+      }
+      /* Feedback Link Styles */
+      #feedbackLink {
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+      }
+      /* Debug Container Styles */
+      #debug {
+      margin-top: 20px;
+      display: none;
+      }
+      /* -- Button Styles -- */
+      #button-container {
+	   margin-bottom: 50px
+	  }
+	  /* Common */
+	  #load-button,
+      #submit-btn,
+      #next,
+      #main-menu-button,
+      #choices-container button {
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 0px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      #choices-container button {
+      font-style: italic;
+      }
+      /* Take Quiz Button Styles */
+      #load-button {
+      background-color: #555;
+      color: white;
+      border: none;
+      }
+      #load-button:hover {
+      background-color: #777;
+      }
+      #load-button:active {
+      background-color: #333;
+      }
+      /* Main Menu Button Styles */
+      #main-menu-button {
+      border: 1px solid #555;
+      color: #555;
+      }
+      #main-menu-button:hover {
+      background-color: #777;
+      }
+      #main-menu-button:active {
+      background-color: #333;
+      }
+      /* Answer Choices Button Styles */
+      #choices-container button {
+      border: 2px solid #555;
+      color: #333;
+      margin: 5px;
+      display: inline-block;
+      background-color: #fff;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+      #choices-container button:hover {
+      background-color: #777;
+      border-color: #777;
+      }
+      #choices-container button:active {
+      background-color: #333;
+      border-color: #333;
+      }
+      /* Submit Button Styles */
+      #submit-btn {
+      background-color: #555;
+      color: white;
+      border: none;
+      margin-right: 10px;
+      }
+      #submit-btn:hover {
+      background-color: #777;
+      }
+      #submit-btn:active {
+      background-color: #333;
+      }
+      #submit-btn.disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+      }
+      /* Next Button Styles */
+      #next {
+      color: #555;
+      background-color: #888;
+      border: none;
+      margin-right: 10px;
+      }
+      #next:hover {
+      background-color: #777;
+      }
+      #next:active {
+      background-color: #333;
+      }
+   </style>
+   <div id="main-menu">
+      <h1>Main Menu</h1>
+      <h3>Select Exam:</h3>
+      <div id="quiz-row"></div>
+   </div>
+   <div class="centered-container" id="quiz-info-container" style="display: none;">
+      <div class="h1" id="quiz-title"></div>
+      <div class="h3" id="quiz-description"></div>
+      <div class="h3" id="quiz-numquestions"></div>
+      <label for="numberOfQuestions">Number of questions requested:</label>
+      <input type="number" id="numberOfQuestions" />
+      <div id="load-button-container">
+         <button id="load-button" onclick="loadQuiz(quizData)">Take Quiz</button>
+         <button id="main-menu-button" onclick="showMainMenu()">Main Menu</button>
+      </div>
+   </div>
+   <div class="centered-container" id="quiz-container">
+      <div class="h1" id="quiz-title2"></div>
+      <div id="card-border">
+         <div id="questions"></div>
+         <div id="question-container">
+            <h2 id="question"></h2>
+         </div>
+         <div id="choices-container">
+            <button id="choice0" onclick="choiceClicked('0')">1</button>
+            <br></br>
+            <button id="choice1" onclick="choiceClicked('1')">2</button>
+            <br></br>
+            <button id="choice2" onclick="choiceClicked('2')">3</button>
+            <br></br>
+            <button id="choice3" onclick="choiceClicked('3')">4</button>
+            <br></br>
+            <button id="choice4" onclick="choiceClicked('4')">5</button>
+            <br></br>
+            <button id="choice5" onclick="choiceClicked('5')">6</button>
+            <br></br>
+         </div>
+      <div id="button-container">
+         <button id="submit-btn" onclick="submit()">Submit</button>
+         <button id="next" onclick="loadQuestion(quizData, questions, numQuestions)">Next ></button>
+      </div>
+      </div>
+      <div id="explanation-container"></div>
+      <a id="feedbackLink" href="#" onclick="openFeedbackWindow()">Incorrect or outdated question?</a>
+   </div>
+   <div id="debug">Debugger</div>
+</j:jelly>]]></html>
+        <name>Quiz</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 21:06:22</sys_created_on>
+        <sys_id>e0c8ace4476031103853249bd36d43b1</sys_id>
+        <sys_mod_count>280</sys_mod_count>
+        <sys_name>Quiz</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_ui_page_e0c8ace4476031103853249bd36d43b1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-27 15:32:58</sys_updated_on>
+    </sys_ui_page>
+</record_update>

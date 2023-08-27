@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Quiz Hub</name>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-10 14:08:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fd9b4c2472031103853249bd36d432d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Quiz Hub</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_ui_application_3fd9b4c2472031103853249bd36d432d</sys_update_name>
+        <sys_updated_by>jeremy.fisher</sys_updated_by>
+        <sys_updated_on>2023-08-10 14:08:45</sys_updated_on>
+    </sys_ui_application>
+</record_update>

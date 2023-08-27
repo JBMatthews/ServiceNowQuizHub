@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Quiz Hub">3fd9b4c2472031103853249bd36d432d</application>
+        <filter/>
+        <name>SN Practice Exams</name>
+        <order>110</order>
+        <path>https://insightdev1.service-now.com/x_274343_quiz_hub_Quiz.do</path>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles/>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-10 14:09:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>33e9f4c2472031103853249bd36d435a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SN Practice Exams</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_ui_module_33e9f4c2472031103853249bd36d435a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-27 13:35:02</sys_updated_on>
+        <table/>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

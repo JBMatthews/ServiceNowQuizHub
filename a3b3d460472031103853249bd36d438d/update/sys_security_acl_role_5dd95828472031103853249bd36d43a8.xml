@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-05 19:57:45</sys_created_on>
+        <sys_id>5dd95828472031103853249bd36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_274343_quiz_hub_Quiz Import JSON.x_274343_quiz_hub.question_bank_user</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_security_acl display_value="x_274343_quiz_hub_Quiz Import JSON">d9d95828472031103853249bd36d43a5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5dd95828472031103853249bd36d43a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-05 19:57:45</sys_updated_on>
+        <sys_user_role display_value="x_274343_quiz_hub.question_bank_user" name="x_274343_quiz_hub.question_bank_user">8f2590e0472031103853249bd36d4381</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
