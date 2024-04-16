@@ -21,5 +21,5 @@ If you don't have the necessary credentials you'll want to follow this instructi
 2. Click "New" to create a new credential
 3. Locate and select the "Basic Auth Credentials" option
 4. Fill out the new credentials form, by giving it a name and then the username and password of the GitHub account you are importing from
-<img width="692" alt="Screenshot 2024-04-16 at 4 56 28 PM" src="https://github.com/JBMatthews/SNInsightQuizHub/assets/21102559/30dec399-349e-4133-9d49-a4f5edcdb815">
+<img width="692" alt="Screenshot 2024-04-16 at 4 56 28 PM" src="https://github.com/JBMatthews/SNInsightQuizHub/assets/21102559/30dec399-349e-4133-9d49-a4f5edcdb815"><br>
 5. Once complete, click the "Sumbit" button and then navigate back to "Import From Source Control" in Studio
