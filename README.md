@@ -1,4 +1,4 @@
-# Quiz Hub (ServiceNow Scoped Application)
+# ServiceNow Quiz Hub
 
 ## Overview
 **Quiz Hub** is a custom ServiceNow application that lets you:
