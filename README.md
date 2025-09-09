@@ -12,7 +12,7 @@ The app is scoped as `x_274343_quiz_hub`.
 ---
 
 ## Features
-- **Import quizzes from JSON** (see sample files `csa_quiz_data.json` and `cad_quiz_data_FIXED.json`).
+- **Import quizzes from JSON** (see sample files `csa_quiz_data.json` and `cad_quiz_data.json`).
 - **Create quizzes manually** via ServiceNow modules.
 - **Take a quiz** in the UI, with multi-choice and single-choice support.
 - **Submit feedback** on questions to flag errors or suggest improvements.
