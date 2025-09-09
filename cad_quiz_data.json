@@ -12,7 +12,10 @@
       "correct_answers": [
         "A Weight value of zero means that no email should be sent"
       ],
-      "explanation": "The default weight value causes the system to always send the notification (assuming the conditions are met)"
+      "explanation": "The default weight value causes the system to always send the notification (assuming the conditions are met)",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "When creating new application files in a scoped application, cross-scope access is turned on by default in which of the following? (Select two)",
@@ -27,7 +30,11 @@
         "Table",
         "Workflow"
       ],
-      "explanation": "By default, cross-scope access is turned on in Table and Workflow"
+      "explanation": "By default, cross-scope access is turned on in Table and Workflow",
+      "correct_answers_index": [
+        1,
+        3
+      ]
     },
     {
       "prompt": "Which Application Access configuration field(s) are NOT available if the \"Can read\" configuration field is NOT selected?",
@@ -42,7 +49,11 @@
         "\"Can create,\" \"Can update,\" and \"Can delete\"",
         "Allow configuration"
       ],
-      "explanation": "The three other fields are read-only until \"Can read\" is checked"
+      "explanation": "The three other fields are read-only until \"Can read\" is checked",
+      "correct_answers_index": [
+        1,
+        3
+      ]
     },
     {
       "prompt": "Which of the following is NOT a trigger type in Flow Designer?",
@@ -56,7 +67,10 @@
       "correct_answers": [
         "Outbound Email"
       ],
-      "explanation": "Official CAD book mentions the following trigger types: Application triggers, Record triggers, Schedule triggers"
+      "explanation": "Official CAD book mentions the following trigger types: Application triggers, Record triggers, Schedule triggers",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "To see what scripts, reports, and other application artifacts will be in a published application:",
@@ -70,7 +84,10 @@
       "correct_answers": [
         "Examine the Application Files Related List in the application to be published"
       ],
-      "explanation": "In order to see ALL application artifacts, you need to search for the Application Files Related List."
+      "explanation": "In order to see ALL application artifacts, you need to search for the Application Files Related List.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "Which one of the following is NOT a debugging strategy for client-side scripts?",
@@ -84,7 +101,10 @@
       "correct_answers": [
         "gs.log()"
       ],
-      "explanation": "gs.log - Glide System ServiceNow API. It is only available for server-side scripts, not client-side."
+      "explanation": "gs.log - Glide System ServiceNow API. It is only available for server-side scripts, not client-side.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which of the following are configured in an Email Notification?",
@@ -100,7 +120,12 @@
         "What content will be in the notification.",
         "When to send the notification."
       ],
-      "explanation": "There is no configuration option as 'How to send the notification'."
+      "explanation": "There is no configuration option as 'How to send the notification'.",
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "prompt": "Which objects can you use in a Scheduled Script Execution (Scheduled Job) script?",
@@ -114,7 +139,10 @@
       "correct_answers": [
         "GlideSystem and GlideRecord"
       ],
-      "explanation": "You can use only Server-Side APIs, so GlideUser is incorrect. You cannot use 'current' or 'previous' as well."
+      "explanation": "You can use only Server-Side APIs, so GlideUser is incorrect. You cannot use 'current' or 'previous' as well.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "When a ServiceNow instance requests information from a web service, ServiceNow is the web service:",
@@ -128,7 +156,10 @@
       "correct_answers": [
         "Consumer"
       ],
-      "explanation": "\"Web services make it possible for applications to connect to other software applications over a network, allowing an exchange of information between the provider (server) and the consumer (client).\""
+      "explanation": "\"Web services make it possible for applications to connect to other software applications over a network, allowing an exchange of information between the provider (server) and the consumer (client).\"",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which one of the following is the fastest way to create and configure a Record Producer?",
@@ -142,7 +173,10 @@
       "correct_answers": [
         "Open the table in the Table records and select the Add to Service Catalog Related Link"
       ],
-      "explanation": "\"The Add to Service Catalog Related Link\" on a Table record creates a Record Producer."
+      "explanation": "\"The Add to Service Catalog Related Link\" on a Table record creates a Record Producer.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "Which of the following methods are useful in Access Control scripts?",
@@ -156,7 +190,10 @@
       "correct_answers": [
         "gs.hasRole() and current.isNewRecord()"
       ],
-      "explanation": "Access Control scripts accept only server-side APIs. Hence, any client-side API like GlideUser or GlideForm is not applicable. There is no such thing as 'current.isNew()'."
+      "explanation": "Access Control scripts accept only server-side APIs. Hence, any client-side API like GlideUser or GlideForm is not applicable. There is no such thing as 'current.isNew()'.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which one of the following client-side scripts applies to Record Producers?",
@@ -170,7 +207,10 @@
       "correct_answers": [
         "Catalog Client Script and Catalog UI Policies"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "When configuring an Access Control that has no condition or script, which one of the following statements is NOT true?",
@@ -184,7 +224,10 @@
       "correct_answers": [
         "<table.id> will grant access to a specific record on the table"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "How must Application Access be configured to prevent all other private application scopes from creating configuration records on an application's data tables?",
@@ -198,7 +241,10 @@
       "correct_answers": [
         "Set the \"Accessible from\" field value to \"This application scope only\""
       ],
-      "explanation": "The \"Accessible from\" field should be set as \"This application scope only\" in order to restrict creating configuration records."
+      "explanation": "The \"Accessible from\" field should be set as \"This application scope only\" in order to restrict creating configuration records.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What are some of the benefits of extending an existing table such as the Task table when creating a new application?",
@@ -214,7 +260,12 @@
         "Use existing fields with no modifications.",
         "Existing logic from the parent table will be automatically applied to the new table."
       ],
-      "explanation": "\"All of the parent table records are copied to the new table\" is not true. Records are NOT copied."
+      "explanation": "\"All of the parent table records are copied to the new table\" is not true. Records are NOT copied.",
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "prompt": "Which one of the following is NOT a method used for logging messages in a server-side script for a privately-scoped application?",
@@ -228,7 +279,10 @@
       "correct_answers": [
         "gs.log()"
       ],
-      "explanation": "Instead of gs.log(), you can always use gs.info() for both global and privately-scoped applications."
+      "explanation": "Instead of gs.log(), you can always use gs.info() for both global and privately-scoped applications.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "If the \"Create module\" field is selected when creating a table, what is the new module's default behavior?",
@@ -242,7 +296,10 @@
       "correct_answers": [
         "Display a list view with potential table records"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which one of the following is NOT required to link a ServiceNow application to a Git repository?",
@@ -256,7 +313,10 @@
       "correct_answers": [
         "Application name"
       ],
-      "explanation": "In order to connect your application to Source Control, you do not need the Application Name."
+      "explanation": "In order to connect your application to Source Control, you do not need the Application Name.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which Report Type(s) can be created by right-clicking on a column header in a table's list?",
@@ -270,7 +330,10 @@
       "correct_answers": [
         "Bar Chart and Pie Chart"
       ],
-      "explanation": "Bar Chart and Pie Chart are the only chart options given."
+      "explanation": "Bar Chart and Pie Chart are the only chart options given.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What is a Module?",
@@ -284,7 +347,10 @@
       "correct_answers": [
         "The functionality within an application menu such as links to other pages or records in the platform"
       ],
-      "explanation": "Modules are the children, or the second-tier navigation options, to the applications in the application navigator. Modules often link to other pages or records in the platform."
+      "explanation": "Modules are the children, or the second-tier navigation options, to the applications in the application navigator. Modules often link to other pages or records in the platform.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which source control operation is available from BOTH Studio and the Git Repository?",
@@ -298,7 +364,10 @@
       "correct_answers": [
         "Create Branch"
       ],
-      "explanation": "Create a branch in the repository to save a different version of the application."
+      "explanation": "Create a branch in the repository to save a different version of the application.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which of the following methods prints a message on a blue background to the top of the current form by default?",
@@ -312,7 +381,10 @@
       "correct_answers": [
         "g_form.addInfoMessage()"
       ],
-      "explanation": "g_form.addInfoMessage() prints a message on a blue background to the top of the current form by default."
+      "explanation": "g_form.addInfoMessage() prints a message on a blue background to the top of the current form by default.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "A scoped application containing Flow Designer content dedicated to a particular application is called a(n):",
@@ -326,7 +398,10 @@
       "correct_answers": [
         "Spoke"
       ],
-      "explanation": "A scoped application containing Flow Designer content dedicated to a particular application is called a Spoke."
+      "explanation": "A scoped application containing Flow Designer content dedicated to a particular application is called a Spoke.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What syntax is used in a Record Producer script to access values from Record Producer form fields?",
@@ -340,21 +415,27 @@
       "correct_answers": [
         "producer.variablename"
       ],
-      "explanation": "In a Record Producer script, you can access values from Record Producer form fields using the syntax producer.variablename."
+      "explanation": "In a Record Producer script, you can access values from Record Producer form fields using the syntax producer.variablename.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "How many applications menus can an application have?",
       "type": "single",
       "choices": [
-        "3, one for an application\u2019s user modules, one for an application\u2019s administrator modules, and one for the ServiceNow administrator\u2019s modules",
+        "3, one for an application’s user modules, one for an application’s administrator modules, and one for the ServiceNow administrator’s modules",
         "As many as the application design requires",
-        "2, one for an application\u2019s user modules and one for an application\u2019s administrator modules",
+        "2, one for an application’s user modules and one for an application’s administrator modules",
         "1, which is used for all application modules"
       ],
       "correct_answers": [
         "As many as the application design requires"
       ],
-      "explanation": "An application can have as many application menus as the application design requires."
+      "explanation": "An application can have as many application menus as the application design requires.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "The source control operation used to store local changes on an instance for later application is called a(n) <blank>.",
@@ -368,7 +449,10 @@
       "correct_answers": [
         "Stash"
       ],
-      "explanation": "The source control operation used to store local changes on an instance for later application is called a Stash."
+      "explanation": "The source control operation used to store local changes on an instance for later application is called a Stash.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "Which one of the following is part of the client-side scripting API?",
@@ -382,7 +466,10 @@
       "correct_answers": [
         "GlideUser object (g_user)"
       ],
-      "explanation": "The GlideUser object (g_user) is part of the client-side scripting API."
+      "explanation": "The GlideUser object (g_user) is part of the client-side scripting API.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "ServiceNow developers rely on industry-standard JavaScript to...",
@@ -390,13 +477,16 @@
       "choices": [
         "Enable the right-click to edit the context menus on applications in the navigator",
         "Extend and add functionality",
-        "Customize the organization\u2019s company logo and banner text",
+        "Customize the organization’s company logo and banner text",
         "Configure the outgoing email display name"
       ],
       "correct_answers": [
         "Extend and add functionality"
       ],
-      "explanation": "ServiceNow developers rely on industry-standard JavaScript to extend and add functionality."
+      "explanation": "ServiceNow developers rely on industry-standard JavaScript to extend and add functionality.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which of the following CANNOT be debugged using the Field Watcher?",
@@ -410,7 +500,10 @@
       "correct_answers": [
         "Script Includes"
       ],
-      "explanation": "Script Includes cannot be debugged using the Field Watcher."
+      "explanation": "Script Includes cannot be debugged using the Field Watcher.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which objects can be used in Inbound Action scripts?",
@@ -425,7 +518,11 @@
         "current and email",
         "current and event"
       ],
-      "explanation": "In Inbound Action scripts, you can use the objects current and email, as well as current and event."
+      "explanation": "In Inbound Action scripts, you can use the objects current and email, as well as current and event.",
+      "correct_answers_index": [
+        1,
+        2
+      ]
     },
     {
       "prompt": "It is best practice to define the business requirements and the process(es) an application will manage as part of the application development plan. What are some of the considerations to document as part of the business process?",
@@ -439,13 +536,16 @@
       "correct_answers": [
         "Business problem, data input/output, users/stakeholders, and process steps"
       ],
-      "explanation": "When documenting the business process, it is important to include considerations such as the business problem, data input/output, users/stakeholders, and process steps."
+      "explanation": "When documenting the business process, it is important to include considerations such as the business problem, data input/output, users/stakeholders, and process steps.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which of the following statements does NOT apply when extending an existing table?",
       "type": "single",
       "choices": [
-        "The parent table\u2019s Access Controls are evaluated when determining access to the new table\u2019s records and fields",
+        "The parent table’s Access Controls are evaluated when determining access to the new table’s records and fields",
         "The new table inherits the functionality built into the parent table",
         "The new table inherits all of the fields from the parent table",
         "You must script and configure all required behaviors"
@@ -453,7 +553,10 @@
       "correct_answers": [
         "You must script and configure all required behaviors"
       ],
-      "explanation": "When extending an existing table, the new table inherits the functionality and fields from the parent table. You do not necessarily have to script and configure all required behaviors."
+      "explanation": "When extending an existing table, the new table inherits the functionality and fields from the parent table. You do not necessarily have to script and configure all required behaviors.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which one of the following is the baseline behavior of a table in a privately-scoped application?",
@@ -461,13 +564,16 @@
       "choices": [
         "The table and its data are not accessible using web services",
         "Any Business Rule can read, write, delete, and update from the table",
-        "Only artifacts in the table\u2019s application can read from the table",
+        "Only artifacts in the table’s application can read from the table",
         "All application scopes can read from the table"
       ],
       "correct_answers": [
         "All application scopes can read from the table"
       ],
-      "explanation": "In a privately-scoped application, all application scopes can read from the table by default."
+      "explanation": "In a privately-scoped application, all application scopes can read from the table by default.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which one of the following is NOT a purpose of application scoping?",
@@ -481,7 +587,10 @@
       "correct_answers": [
         "Provide a way of tracking the user who developed an application"
       ],
-      "explanation": "Application scoping provides a relationship between application artifacts, provides a namespace to prevent cross-application name collisions, and provides controls for how scripts from another scope can alter tables in a scoped application. It is not primarily used to track the user who developed an application."
+      "explanation": "Application scoping provides a relationship between application artifacts, provides a namespace to prevent cross-application name collisions, and provides controls for how scripts from another scope can alter tables in a scoped application. It is not primarily used to track the user who developed an application.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which one of the following is true regarding Application Scope?",
@@ -490,12 +599,15 @@
         "All applications are automatically part of the Global scope",
         "Applications downloaded from 3rd party ServiceNow application developers cannot have naming conflicts",
         "Any developer can edit any application",
-        "Developers can choose the prefix for a scope\u2019s namespace"
+        "Developers can choose the prefix for a scope’s namespace"
       ],
       "correct_answers": [
         "Applications downloaded from 3rd party ServiceNow application developers cannot have naming conflicts"
       ],
-      "explanation": "Applications downloaded from 3rd party ServiceNow application developers cannot have naming conflicts as each application is assigned a unique scope."
+      "explanation": "Applications downloaded from 3rd party ServiceNow application developers cannot have naming conflicts as each application is assigned a unique scope.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Identify the incorrect statement about Delegated Development in ServiceNow.",
@@ -509,7 +621,10 @@
       "correct_answers": [
         "Administrators can grant non-admin users the ability to develop global applications"
       ],
-      "explanation": "Administrators cannot grant non-admin users the ability to develop global applications. Delegated Development is limited to scoped applications within specific application scopes."
+      "explanation": "Administrators cannot grant non-admin users the ability to develop global applications. Delegated Development is limited to scoped applications within specific application scopes.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "One of the uses of the ServiceNow REST API Explorer is:",
@@ -523,21 +638,25 @@
       "correct_answers": [
         "Create sample code for sending REST requests to ServiceNow"
       ],
-      "explanation": "One of the uses of the ServiceNow REST API Explorer is to create sample code for sending REST requests to ServiceNow."
+      "explanation": "One of the uses of the ServiceNow REST API Explorer is to create sample code for sending REST requests to ServiceNow.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "In a Business Rule, which one of the following returns true if the currently logged in user has the admin role?",
       "type": "single",
       "choices": [
-        "g_form.hasRoleExactly(\u2018admin\u2019)",
-        "gs.hasRole(\u2018admin\u2019)",
-        "g_form.hasRole(\u2018admin\u2019)",
-        "gs.hasRoleExactly(\u2018admin\u2019)"
+        "g_form.hasRoleExactly(‘admin’)",
+        "gs.hasRole(‘admin’)",
+        "g_form.hasRole(‘admin’)",
+        "gs.hasRoleExactly(‘admin’)"
       ],
       "correct_answers": [
         "gs.hasRole('admin')"
       ],
-      "explanation": "gs.hasRole('admin') returns true if the currently logged in user has the admin role."
+      "explanation": "gs.hasRole('admin') returns true if the currently logged in user has the admin role.",
+      "correct_answers_index": []
     },
     {
       "prompt": "From the list below, identify one reason an application might NOT be a good fit with ServiceNow. The application:",
@@ -551,7 +670,10 @@
       "correct_answers": [
         "Requires 'as-is' use of low-level programming libraries"
       ],
-      "explanation": "An application might not be a good fit with ServiceNow if it requires the 'as-is' use of low-level programming libraries."
+      "explanation": "An application might not be a good fit with ServiceNow if it requires the 'as-is' use of low-level programming libraries.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "When configuring a module, what does the Override application menu roles configuration option do?",
@@ -560,12 +682,15 @@
         "Users with the module role but without access to the application menu access the module",
         "Self-Service users can access the module even though they do not have roles",
         "Admin is given access to the module even if Access Controls would ordinarily prevent access",
-        "Users with access to the application menu can see the module even if they don\u2019t have the module role"
+        "Users with access to the application menu can see the module even if they don’t have the module role"
       ],
       "correct_answers": [
         "Users with the module role but without access to the application menu access the module"
       ],
-      "explanation": "The 'Override application menu roles' configuration option allows users with the module role but without access to the application menu to access the module."
+      "explanation": "The 'Override application menu roles' configuration option allows users with the module role but without access to the application menu to access the module.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "A graphical view of relationships among tables is a <blank>.",
@@ -579,7 +704,10 @@
       "correct_answers": [
         "Schema map"
       ],
-      "explanation": "A schema map provides a graphical view of relationships among tables in ServiceNow."
+      "explanation": "A schema map provides a graphical view of relationships among tables in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which one of the following is NOT true for Modules?",
@@ -593,7 +721,10 @@
       "correct_answers": [
         "Every Module must be associated with a table"
       ],
-      "explanation": "Modules in ServiceNow open content pages and their access is controlled with roles. However, not every module needs to be associated with a table."
+      "explanation": "Modules in ServiceNow open content pages and their access is controlled with roles. However, not every module needs to be associated with a table.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What are Application Files in a ServiceNow application?",
@@ -607,7 +738,10 @@
       "correct_answers": [
         "ServiceNow artifacts comprising an application"
       ],
-      "explanation": "Application Files in ServiceNow refer to the artifacts comprising an application, including scripts, UI elements, data sources, and more."
+      "explanation": "Application Files in ServiceNow refer to the artifacts comprising an application, including scripts, UI elements, data sources, and more.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "What is the purpose of the Application Picker?",
@@ -621,7 +755,10 @@
       "correct_answers": [
         "Select an application to view"
       ],
-      "explanation": "The Application Picker in ServiceNow is used to select an application to view its content and functionality."
+      "explanation": "The Application Picker in ServiceNow is used to select an application to view its content and functionality.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Can inherited fields be deleted from a table?",
@@ -635,7 +772,10 @@
       "correct_answers": [
         "No, inherited fields cannot be deleted from a child table"
       ],
-      "explanation": "Inherited fields cannot be deleted from a child table in ServiceNow. They are part of the table's structure and inheritance hierarchy."
+      "explanation": "Inherited fields cannot be deleted from a child table in ServiceNow. They are part of the table's structure and inheritance hierarchy.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What scripts, reports, and other application artifacts will be in a published application?",
@@ -649,27 +789,33 @@
       "correct_answers": [
         "Examine the Application Files Related List in the application to be published"
       ],
-      "explanation": "To determine the scripts, reports, and other application artifacts in a published application, you can examine the Application Files Related List in the application record."
+      "explanation": "To determine the scripts, reports, and other application artifacts in a published application, you can examine the Application Files Related List in the application record.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
-      "prompt": "Application developers configure ServiceNow using industry standard JavaScript to\u2026",
+      "prompt": "Application developers configure ServiceNow using industry standard JavaScript to…",
       "type": "single",
       "choices": [
         "Enable the right-click to edit the context menus on applications in the navigator",
-        "Customize the organization\u2019s company logo and banner text",
+        "Customize the organization’s company logo and banner text",
         "Extend and add functionality",
         "Configure the outgoing email display name"
       ],
       "correct_answers": [
         "Extend and add functionality"
       ],
-      "explanation": "Application developers configure ServiceNow using industry standard JavaScript to extend and add functionality to the platform."
+      "explanation": "Application developers configure ServiceNow using industry standard JavaScript to extend and add functionality to the platform.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
-      "prompt": "How must Application Access be configured to prevent all other private application scopes from creating configuration records on an application\u2019s data tables?",
+      "prompt": "How must Application Access be configured to prevent all other private application scopes from creating configuration records on an application’s data tables?",
       "type": "single",
       "choices": [
-        "You must create Access Controls to prevent all other application scopes from creating configuration records on an application\u2019s data tables rather than using Application Access",
+        "You must create Access Controls to prevent all other application scopes from creating configuration records on an application’s data tables rather than using Application Access",
         "Set the Accessible from field value to This application scope only and de-select the Allow access to this table via web services option",
         "Set the Accessible from field value to All application scopes and de-select the Can create option",
         "Set the Accessible from field value to This application scope only"
@@ -677,7 +823,10 @@
       "correct_answers": [
         "Set the Accessible from field value to This application scope only"
       ],
-      "explanation": "To prevent other private application scopes from creating configuration records on an application's data tables, you need to configure Application Access by setting the Accessible from field value to 'This application scope only'."
+      "explanation": "To prevent other private application scopes from creating configuration records on an application's data tables, you need to configure Application Access by setting the Accessible from field value to 'This application scope only'.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What module in the Service Catalog application does an Administrator access to begin creating a new catalog item?",
@@ -691,7 +840,10 @@
       "correct_answers": [
         "Maintain Items"
       ],
-      "explanation": "To create a new catalog item in the Service Catalog application, an Administrator would access the 'Maintain Items' module."
+      "explanation": "To create a new catalog item in the Service Catalog application, an Administrator would access the 'Maintain Items' module.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "How is the Event Log different from the Event Registry?",
@@ -705,7 +857,10 @@
       "correct_answers": [
         "Event Log contains generated Events, the Event Registry is a table of Event definitions"
       ],
-      "explanation": "The Event Log in ServiceNow contains generated events, while the Event Registry is a table of event definitions."
+      "explanation": "The Event Log in ServiceNow contains generated events, while the Event Registry is a table of event definitions.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?",
@@ -719,7 +874,10 @@
       "correct_answers": [
         "Load Data, Create Transform Map, Run Transform"
       ],
-      "explanation": "To import new data into ServiceNow from a spreadsheet, you can use the steps: Load Data, Create Transform Map, and Run Transform."
+      "explanation": "To import new data into ServiceNow from a spreadsheet, you can use the steps: Load Data, Create Transform Map, and Run Transform.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Tables are made up of which of the following?",
@@ -734,7 +892,11 @@
         "Records",
         "Fields"
       ],
-      "explanation": "Tables in ServiceNow are made up of records (rows) and fields (columns). Lists and forms are UI elements used to interact with table data."
+      "explanation": "Tables in ServiceNow are made up of records (rows) and fields (columns). Lists and forms are UI elements used to interact with table data.",
+      "correct_answers_index": [
+        0,
+        3
+      ]
     },
     {
       "prompt": "What are the three components of a filter condition?",
@@ -748,7 +910,10 @@
       "correct_answers": [
         "Field, Operator, and Value"
       ],
-      "explanation": "A filter condition in ServiceNow consists of three components: Field, Operator, and Value. These components define the criteria for filtering records."
+      "explanation": "A filter condition in ServiceNow consists of three components: Field, Operator, and Value. These components define the criteria for filtering records.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Access Control rules may be defined with which of the following permission requirements? (Choose three.)",
@@ -766,7 +931,12 @@
         "Conditional Expressions",
         "Scripts"
       ],
-      "explanation": "Access Control rules in ServiceNow can be defined with roles, conditional expressions, and scripts. These permission requirements control access to data and functionality."
+      "explanation": "Access Control rules in ServiceNow can be defined with roles, conditional expressions, and scripts. These permission requirements control access to data and functionality.",
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ]
     },
     {
       "prompt": "Which term best describes something that is created, has work performed upon it, and is eventually moved to a state of closed?",
@@ -780,7 +950,10 @@
       "correct_answers": [
         "Task"
       ],
-      "explanation": "In ServiceNow, a task represents something that is created, has work performed upon it, and is eventually moved to a state of closed."
+      "explanation": "In ServiceNow, a task represents something that is created, has work performed upon it, and is eventually moved to a state of closed.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What ServiceNow feature can be triggered by events and is used to inform users about activities or updates in ServiceNow?",
@@ -795,7 +968,10 @@
       "correct_answers": [
         "Notifications"
       ],
-      "explanation": "Notifications in ServiceNow can be triggered by events and are used to inform users about activities or updates in the platform."
+      "explanation": "Notifications in ServiceNow can be triggered by events and are used to inform users about activities or updates in the platform.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "ServiceNow is good for media streaming. True or false?",
@@ -807,7 +983,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "ServiceNow is not designed for media streaming purposes."
+      "explanation": "ServiceNow is not designed for media streaming purposes.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "g_user.hasRole('x_foo_app_user') - this returns true for the admin role. True or false?",
@@ -819,7 +998,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "The 'g_user.hasRole' method returns true for the admin role, as the admin role includes other roles."
+      "explanation": "The 'g_user.hasRole' method returns true for the admin role, as the admin role includes other roles.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What Business Rule type executes its logic before a database operation occurs?",
@@ -833,7 +1015,10 @@
       "correct_answers": [
         "Before"
       ],
-      "explanation": "A 'Before' Business Rule type executes its logic before a database operation occurs in ServiceNow."
+      "explanation": "A 'Before' Business Rule type executes its logic before a database operation occurs in ServiceNow.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "What Business Rule type executes its logic immediately after a database operation occurs and before the resulting form is rendered for the user?",
@@ -847,7 +1032,10 @@
       "correct_answers": [
         "After"
       ],
-      "explanation": "An 'After' Business Rule type executes its logic immediately after a database operation occurs and before the resulting form is rendered for the user in ServiceNow."
+      "explanation": "An 'After' Business Rule type executes its logic immediately after a database operation occurs and before the resulting form is rendered for the user in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What Business Rule type executes asynchronously?",
@@ -861,7 +1049,10 @@
       "correct_answers": [
         "Async"
       ],
-      "explanation": "An 'Async' Business Rule type executes asynchronously in ServiceNow."
+      "explanation": "An 'Async' Business Rule type executes asynchronously in ServiceNow.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "What allows direct scripting access to fields and field values on related records?",
@@ -875,7 +1066,10 @@
       "correct_answers": [
         "Dot-Walking"
       ],
-      "explanation": "Dot-Walking allows direct scripting access to fields and field values on related records in ServiceNow."
+      "explanation": "Dot-Walking allows direct scripting access to fields and field values on related records in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "An ACL can't have a 'NONE' Access Control and a '*' Access Control. True or false?",
@@ -887,7 +1081,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "An ACL in ServiceNow can have both 'NONE' and '*' Access Control configurations."
+      "explanation": "An ACL in ServiceNow can have both 'NONE' and '*' Access Control configurations.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "An application system property can be a reference field. True or false?",
@@ -899,7 +1096,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "An application system property in ServiceNow cannot be a reference field."
+      "explanation": "An application system property in ServiceNow cannot be a reference field.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "ServiceNow can only respond to events which are registered with the ____________.",
@@ -913,7 +1113,10 @@
       "correct_answers": [
         "Event Registry"
       ],
-      "explanation": "ServiceNow can only respond to events that are registered with the Event Registry."
+      "explanation": "ServiceNow can only respond to events that are registered with the Event Registry.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Default homepages can be customized.",
@@ -925,7 +1128,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "Default homepages in ServiceNow can be customized."
+      "explanation": "Default homepages in ServiceNow can be customized.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "__________ option makes a field a record's unique key",
@@ -939,7 +1145,10 @@
       "correct_answers": [
         "Coalesce"
       ],
-      "explanation": "The 'Coalesce' option makes a field a record's unique key in ServiceNow."
+      "explanation": "The 'Coalesce' option makes a field a record's unique key in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "An application owns its tables and determine whether other applications can access resources from them. True or false?",
@@ -951,7 +1160,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "An application in ServiceNow owns its tables and determines whether other applications can access resources from them."
+      "explanation": "An application in ServiceNow owns its tables and determines whether other applications can access resources from them.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Developers DO or DO NOT create application file records directly from the Application File table",
@@ -963,7 +1175,10 @@
       "correct_answers": [
         "Do not"
       ],
-      "explanation": "Developers do not create application file records directly from the Application File table in ServiceNow."
+      "explanation": "Developers do not create application file records directly from the Application File table in ServiceNow.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Removing a field from a form using the Form Designer deletes the field from the database table. True or false?",
@@ -975,7 +1190,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "Removing a field from a form using the Form Designer does not delete the field from the database table. It only removes it from the form view."
+      "explanation": "Removing a field from a form using the Form Designer does not delete the field from the database table. It only removes it from the form view.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Team Development uses Git to manage versions. True or false?",
@@ -987,7 +1205,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "Team Development in ServiceNow uses Git to manage versions."
+      "explanation": "Team Development in ServiceNow uses Git to manage versions.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Update sets track customizations where the table has an 'update_synch' dictionary attribute. True or false?",
@@ -999,7 +1220,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "Update sets in ServiceNow track customizations where the table has an 'update_synch' dictionary attribute."
+      "explanation": "Update sets in ServiceNow track customizations where the table has an 'update_synch' dictionary attribute.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "More than one update set can be the default set for any application scope. True or false?",
@@ -1011,7 +1235,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "In ServiceNow, there can only be one default update set for any application scope."
+      "explanation": "In ServiceNow, there can only be one default update set for any application scope.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "ServiceNow is good for real-time data delivery and updates from external sources. True or false?",
@@ -1023,7 +1250,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "ServiceNow is not typically used for real-time data delivery and updates from external sources."
+      "explanation": "ServiceNow is not typically used for real-time data delivery and updates from external sources.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "An unpublished workflow will be captured in an update set. True or false?",
@@ -1035,7 +1265,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "An unpublished workflow will not be captured in an update set in ServiceNow."
+      "explanation": "An unpublished workflow will not be captured in an update set in ServiceNow.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "You can define visibility of variables on a task form using the workflow. True or false?",
@@ -1047,7 +1280,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "Visibility of variables on a task form can be defined using the workflow in ServiceNow."
+      "explanation": "Visibility of variables on a task form can be defined using the workflow in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Sending an email notification is possible via an inbound action. True or false?",
@@ -1059,7 +1295,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "Sending an email notification is possible via an inbound action in ServiceNow."
+      "explanation": "Sending an email notification is possible via an inbound action in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Setting up an application in Guided Application Creator guides you through what three steps? (Select three)",
@@ -1077,7 +1316,12 @@
         "Choose User Experience",
         "Table configurations"
       ],
-      "explanation": "Setting up an application in Guided Application Creator involves defining user roles, choosing user experience, and configuring table configurations."
+      "explanation": "Setting up an application in Guided Application Creator involves defining user roles, choosing user experience, and configuring table configurations.",
+      "correct_answers_index": [
+        1,
+        4,
+        5
+      ]
     },
     {
       "prompt": "The ServiceNow Studio application offers a simple way to do what three things from a tabbed environment? (Select three)",
@@ -1095,7 +1339,12 @@
         "Review application files",
         "Update application files"
       ],
-      "explanation": "The ServiceNow Studio application allows you to create, review, and update application files from a tabbed environment."
+      "explanation": "The ServiceNow Studio application allows you to create, review, and update application files from a tabbed environment.",
+      "correct_answers_index": [
+        1,
+        3,
+        5
+      ]
     },
     {
       "prompt": "In the Next Experience, what provides context for where you are in your instance, and enables you to favorite the item you're viewing?",
@@ -1109,7 +1358,10 @@
       "correct_answers": [
         "Contextual app pill"
       ],
-      "explanation": "In the Next Experience, the contextual app pill provides context for where you are in your instance and allows you to favorite the item you're viewing."
+      "explanation": "In the Next Experience, the contextual app pill provides context for where you are in your instance and allows you to favorite the item you're viewing.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "With the Next Experience landing page, you can access workspaces, classic lists and forms, applications, history, and favorites through the:",
@@ -1124,7 +1376,10 @@
       "correct_answers": [
         "Single pane Next Experience U"
       ],
-      "explanation": "With the Next Experience landing page, you can access workspaces, classic lists and forms, applications, history, and favorites through the Single pane Next Experience UI."
+      "explanation": "With the Next Experience landing page, you can access workspaces, classic lists and forms, applications, history, and favorites through the Single pane Next Experience UI.",
+      "correct_answers_index": [
+        4
+      ]
     },
     {
       "prompt": "In the Next Experience, to retrieve any item in the menu, use:",
@@ -1138,7 +1393,10 @@
       "correct_answers": [
         "All menu"
       ],
-      "explanation": "In the Next Experience, you can retrieve any item in the menu using the 'All menu' option."
+      "explanation": "In the Next Experience, you can retrieve any item in the menu using the 'All menu' option.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "ServiceNow Studio includes which three capabilities? (Select three)",
@@ -1156,7 +1414,12 @@
         "Create an application and application artifacts",
         "Perform code search"
       ],
-      "explanation": "ServiceNow Studio includes the capabilities to integrate with source control, create application and application artifacts, and perform code search."
+      "explanation": "ServiceNow Studio includes the capabilities to integrate with source control, create application and application artifacts, and perform code search.",
+      "correct_answers_index": [
+        1,
+        3,
+        5
+      ]
     },
     {
       "prompt": "ServiceNow Desktop applications automatically run on which platform(s):",
@@ -1170,7 +1433,10 @@
       "correct_answers": [
         "Desktop and Tablet"
       ],
-      "explanation": "ServiceNow Desktop applications automatically run on the Desktop and Tablet platforms."
+      "explanation": "ServiceNow Desktop applications automatically run on the Desktop and Tablet platforms.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "You are writing an Async Business Rule for a table in a different scope than the Business Rule record. Which one of the following database operations CANNOT be part of the Async Business Rule's configuration?",
@@ -1184,7 +1450,10 @@
       "correct_answers": [
         "Query"
       ],
-      "explanation": "In an Async Business Rule configuration, the 'Query' database operation cannot be used."
+      "explanation": "In an Async Business Rule configuration, the 'Query' database operation cannot be used.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which one of the following is NOT a GlideUser (g_user) method?",
@@ -1198,7 +1467,10 @@
       "correct_answers": [
         "userName()"
       ],
-      "explanation": "The 'userName()' is not a valid GlideUser method in ServiceNow."
+      "explanation": "The 'userName()' is not a valid GlideUser method in ServiceNow.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "How do you configure a Scheduled Job to execute on the last day of every month?",
@@ -1212,7 +1484,10 @@
       "correct_answers": [
         "Set the Run field value to Monthly and the Day field value to 31"
       ],
-      "explanation": "To configure a Scheduled Job to execute on the last day of every month, set the Run field value to 'Monthly' and the Day field value to '31'."
+      "explanation": "To configure a Scheduled Job to execute on the last day of every month, set the Run field value to 'Monthly' and the Day field value to '31'.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "The Application Access settings for a table are: A. Global application scope, B. All application scopes, C. This application scope, D. ServiceNow application scope",
@@ -1226,7 +1501,10 @@
       "correct_answers": [
         "B and C"
       ],
-      "explanation": "The Application Access settings 'All application scopes' and 'This application scope' are available for a table, but 'Global application scope' and 'ServiceNow application scope' are not valid options."
+      "explanation": "The Application Access settings 'All application scopes' and 'This application scope' are available for a table, but 'Global application scope' and 'ServiceNow application scope' are not valid options.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which of the following is not a Report Type in ServiceNow?",
@@ -1240,7 +1518,10 @@
       "correct_answers": [
         "Chart"
       ],
-      "explanation": "'Chart' is not a valid Report Type in ServiceNow."
+      "explanation": "'Chart' is not a valid Report Type in ServiceNow.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "Identify the incorrect statement about the Team Development application in ServiceNow.",
@@ -1254,7 +1535,10 @@
       "correct_answers": [
         "Team Development cannot use Git to manage versions"
       ],
-      "explanation": "Team Development in ServiceNow allows for branching operations, including using Git to manage versions."
+      "explanation": "Team Development in ServiceNow allows for branching operations, including using Git to manage versions.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which of these is used to control access to features and capabilities in applications and modules?",
@@ -1269,7 +1553,10 @@
       "correct_answers": [
         "Role"
       ],
-      "explanation": "Roles are used to control access to features and capabilities in applications and modules in ServiceNow."
+      "explanation": "Roles are used to control access to features and capabilities in applications and modules in ServiceNow.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "Which of the following are NOT methods from the GlideRecord API?",
@@ -1285,7 +1572,11 @@
         "addOrQuery()",
         "addAndQuery()"
       ],
-      "explanation": "'addOrQuery()' and 'addAndQuery()' are not valid methods in the GlideRecord API."
+      "explanation": "'addOrQuery()' and 'addAndQuery()' are not valid methods in the GlideRecord API.",
+      "correct_answers_index": [
+        2,
+        3
+      ]
     },
     {
       "prompt": "Which one the following best describes an Angular Providers?",
@@ -1300,7 +1591,10 @@
       "correct_answers": [
         "Directive"
       ],
-      "explanation": "An Angular Provider is best described as a directive."
+      "explanation": "An Angular Provider is best described as a directive.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "When do onSubmit Client Scripts execute their script logic? (Select three)",
@@ -1317,7 +1611,12 @@
         "When a user clicks the Update button",
         "When a user clicks the Lookup button on a reference field."
       ],
-      "explanation": "onSubmit Client Scripts execute their script logic when a user clicks the Submit button, when a user clicks the Update button, and when a user clicks the Lookup button on a reference field."
+      "explanation": "onSubmit Client Scripts execute their script logic when a user clicks the Submit button, when a user clicks the Update button, and when a user clicks the Lookup button on a reference field.",
+      "correct_answers_index": [
+        0,
+        2,
+        4
+      ]
     },
     {
       "prompt": "What one of the following is the correct syntax for adding dynamic content to a notification's HTML message field?",
@@ -1332,7 +1631,10 @@
       "correct_answers": [
         "${short_description}"
       ],
-      "explanation": "To add dynamic content to a notification's HTML message field, you use the syntax ${short_description}."
+      "explanation": "To add dynamic content to a notification's HTML message field, you use the syntax ${short_description}.",
+      "correct_answers_index": [
+        4
+      ]
     },
     {
       "prompt": "Which of the following are settings configured in the Application Settings? More than one response may be correct.",
@@ -1348,7 +1650,11 @@
         "Runtime Access Tracking",
         "Restrict Table Choices"
       ],
-      "explanation": "The settings 'Runtime Access Tracking' and 'Restrict Table Choices' can be configured in the Application Settings."
+      "explanation": "The settings 'Runtime Access Tracking' and 'Restrict Table Choices' can be configured in the Application Settings.",
+      "correct_answers_index": [
+        3,
+        4
+      ]
     },
     {
       "prompt": "Which of the following describe what is configured in the Content Negotiation section?",
@@ -1364,7 +1670,11 @@
         "The supported request formats",
         "The supported response formats."
       ],
-      "explanation": "In the Content Negotiation section, you configure the supported request formats and the supported response formats."
+      "explanation": "In the Content Negotiation section, you configure the supported request formats and the supported response formats.",
+      "correct_answers_index": [
+        1,
+        3
+      ]
     },
     {
       "prompt": "What is the purpose of Embedded Help?",
@@ -1380,7 +1690,10 @@
       "correct_answers": [
         "All of the above"
       ],
-      "explanation": "Embedded Help in ServiceNow serves multiple purposes, including coaching users on using a custom application, providing specific instructions, help in different languages, and content based on user role or query parameter values."
+      "explanation": "Embedded Help in ServiceNow serves multiple purposes, including coaching users on using a custom application, providing specific instructions, help in different languages, and content based on user role or query parameter values.",
+      "correct_answers_index": [
+        5
+      ]
     },
     {
       "prompt": "What value does a Business Rule Condition field return if the field is empty?",
@@ -1394,7 +1707,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "If a Business Rule Condition field is empty, it returns the value 'True'."
+      "explanation": "If a Business Rule Condition field is empty, it returns the value 'True'.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which one of the following best describes an inbound email action?",
@@ -1409,7 +1725,10 @@
       "correct_answers": [
         "Defines which actions ServiceNow takes in response to incoming email"
       ],
-      "explanation": "An inbound email action in ServiceNow defines which actions the platform takes in response to incoming email."
+      "explanation": "An inbound email action in ServiceNow defines which actions the platform takes in response to incoming email.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What field does the data pill reference? Input Variables->User Group->Group->Manager->Name",
@@ -1424,7 +1743,10 @@
       "correct_answers": [
         "The Name of the manager of a group."
       ],
-      "explanation": "The data pill 'Input Variables->User Group->Group->Manager->Name' references the Name of the manager of a group."
+      "explanation": "The data pill 'Input Variables->User Group->Group->Manager->Name' references the Name of the manager of a group.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which of the following are true about scheduling in ATF?",
@@ -1440,7 +1762,11 @@
         "Scheduling allows tests to be scheduled to run at a specific date and time.",
         "Schedules run at a configured frequency."
       ],
-      "explanation": "In ATF, scheduling allows tests to be scheduled to run at a specific date and time, and schedules run at a configured frequency. Browser and operating system configurations are specified in test configurations, not in the scheduling itself. Results can be sent to a watch list of users after completion."
+      "explanation": "In ATF, scheduling allows tests to be scheduled to run at a specific date and time, and schedules run at a configured frequency. Browser and operating system configurations are specified in test configurations, not in the scheduling itself. Results can be sent to a watch list of users after completion.",
+      "correct_answers_index": [
+        0,
+        3
+      ]
     },
     {
       "prompt": "A single Client Script can execute its script logic when a user loads a record into a form AND when a user saves/submits/updates a form",
@@ -1452,7 +1778,10 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "A single Client Script can either execute its script logic when a user loads a record into a form (onLoad) or when a user saves/submits/updates a form (onSubmit), but not both."
+      "explanation": "A single Client Script can either execute its script logic when a user loads a record into a form (onLoad) or when a user saves/submits/updates a form (onSubmit), but not both.",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which of the following are NOT true about the current object?",
@@ -1469,7 +1798,12 @@
         "The current and previous objects are always identical.",
         "The properties of the current object are the same for all Business Rules."
       ],
-      "explanation": "The current object is automatically instantiated, and its property values can change after a record is loaded from the database. The current and previous objects are sometimes identical, such as immediately after a record is loaded. The properties of the current object are specific to each Business Rule."
+      "explanation": "The current object is automatically instantiated, and its property values can change after a record is loaded from the database. The current and previous objects are sometimes identical, such as immediately after a record is loaded. The properties of the current object are specific to each Business Rule.",
+      "correct_answers_index": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "prompt": "Which Runtime Access Tracking option prevents a script from accessing resources until explicitly allowed?",
@@ -1484,7 +1818,10 @@
       "correct_answers": [
         "Enforcing"
       ],
-      "explanation": "The Runtime Access Tracking option 'Enforcing' prevents a script from accessing resources until explicitly allowed."
+      "explanation": "The Runtime Access Tracking option 'Enforcing' prevents a script from accessing resources until explicitly allowed.",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "How can one user temporarily become another user for testing purposes?",
@@ -1499,7 +1836,10 @@
       "correct_answers": [
         "Open the User menu and select the Impersonate User menu item. Select a user to impersonate."
       ],
-      "explanation": "To temporarily become another user for testing purposes, open the User menu and select the Impersonate User menu item. Then, select the user you want to impersonate."
+      "explanation": "To temporarily become another user for testing purposes, open the User menu and select the Impersonate User menu item. Then, select the user you want to impersonate.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which items can be configured with multiple roles to grant access?",
@@ -1515,7 +1855,11 @@
         "Application Menu",
         "Module"
       ],
-      "explanation": "Application Menus and Modules can be configured with multiple roles to grant access."
+      "explanation": "Application Menus and Modules can be configured with multiple roles to grant access.",
+      "correct_answers_index": [
+        1,
+        2
+      ]
     },
     {
       "prompt": "Which of the following methods creates the response body in the resource script?",
@@ -1530,7 +1874,10 @@
       "correct_answers": [
         "setBody()"
       ],
-      "explanation": "The 'setBody()' method is used to create the response body in the resource script."
+      "explanation": "The 'setBody()' method is used to create the response body in the resource script.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "How do you use data from one step in a test in a later step?",
@@ -1545,7 +1892,10 @@
       "correct_answers": [
         "Click the Data Pill Picker button and select the variable from the data pill picker."
       ],
-      "explanation": "To use data from one step in a test in a later step, you can click the Data Pill Picker button and select the variable from the data pill picker."
+      "explanation": "To use data from one step in a test in a later step, you can click the Data Pill Picker button and select the variable from the data pill picker.",
+      "correct_answers_index": [
+        4
+      ]
     },
     {
       "prompt": "Which of the following modules enables security rule debugging?",
@@ -1560,7 +1910,10 @@
       "correct_answers": [
         "System Security > Debugging > Debug Security Rules"
       ],
-      "explanation": "The 'System Security > Debugging > Debug Security Rules' module enables security rule debugging."
+      "explanation": "The 'System Security > Debugging > Debug Security Rules' module enables security rule debugging.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which the following are true statements about Record Watch?",
@@ -1577,23 +1930,33 @@
         "Registers a listener in a widget",
         "Notified when table records are inserted, updated, or deleted"
       ],
-      "explanation": "Record Watch is a method of the spUtil Widget API class, used to register a listener in a widget. It notifies the widget when table records are inserted, updated, or deleted."
+      "explanation": "Record Watch is a method of the spUtil Widget API class, used to register a listener in a widget. It notifies the widget when table records are inserted, updated, or deleted.",
+      "correct_answers_index": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "prompt": "Which of the following statements is true for the Form Designer?",
       "type": "multiple",
       "choices": [
         "To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form.",
-        "To create a new field on a form\u2019s table, drag the appropriate data type from the Field Types tab to the form and then configure the new field.",
+        "To create a new field on a form’s table, drag the appropriate data type from the Field Types tab to the form and then configure the new field.",
         "To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button.",
         "To add a section to the form layout, drag it from the Field Types tab to the desired destination on the form."
       ],
       "correct_answers": [
         "To add a field to the form layout, drag the field from the Fields tab to the desired destination on the form.",
-        "To create a new field on a form\u2019s table, drag the appropriate data type from the Field Types tab to the form and then configure the new field.",
+        "To create a new field on a form’s table, drag the appropriate data type from the Field Types tab to the form and then configure the new field.",
         "To remove a field from the form layout, hover over the field to enable the Action buttons, and select the Delete (X) button."
       ],
-      "explanation": "In the Form Designer, you can add a field to the form layout by dragging the field from the Fields tab to the desired destination on the form. To create a new field on a form's table, you can drag the appropriate data type from the Field Types tab to the form and then configure the new field. To remove a field from the form layout, you can hover over the field to enable the Action buttons and select the Delete (X) button."
+      "explanation": "In the Form Designer, you can add a field to the form layout by dragging the field from the Fields tab to the desired destination on the form. To create a new field on a form's table, you can drag the appropriate data type from the Field Types tab to the form and then configure the new field. To remove a field from the form layout, you can hover over the field to enable the Action buttons and select the Delete (X) button.",
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ]
     },
     {
       "prompt": "What happens if no Embedded Help is available for a page?",
@@ -1607,7 +1970,10 @@
       "correct_answers": [
         "A default Embedded Help page is displayed."
       ],
-      "explanation": "If no Embedded Help is available for a page, a default Embedded Help page is displayed."
+      "explanation": "If no Embedded Help is available for a page, a default Embedded Help page is displayed.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which of the following are true statements about portals?",
@@ -1623,7 +1989,10 @@
       "correct_answers": [
         "All of the above"
       ],
-      "explanation": "When designing portals, think about the user experience you want for your users. Should they have to scroll? Should widgets be resized? Should all widgets be shown at all resolutions and for all device types?"
+      "explanation": "When designing portals, think about the user experience you want for your users. Should they have to scroll? Should widgets be resized? Should all widgets be shown at all resolutions and for all device types?",
+      "correct_answers_index": [
+        5
+      ]
     },
     {
       "prompt": "Which of the following describe ways to make a REST step dynamic?",
@@ -1639,7 +2008,11 @@
         "Use a data pill in the Resource Path for any variable information described in the external API's documentation.",
         "Use a data pill in the Query Parameter value for any query parameters described in the external API's documentation."
       ],
-      "explanation": "Data pills in the Resource Path and Query Parameter values will allow users to pass in values to the action to use in the REST step. While a script can be used to build components of an endpoint, it cannot be used to build the entire endpoint. Setting the HTTP Method to POST will not prompt the user for values and may not work with the API."
+      "explanation": "Data pills in the Resource Path and Query Parameter values will allow users to pass in values to the action to use in the REST step. While a script can be used to build components of an endpoint, it cannot be used to build the entire endpoint. Setting the HTTP Method to POST will not prompt the user for values and may not work with the API.",
+      "correct_answers_index": [
+        2,
+        3
+      ]
     },
     {
       "prompt": "Which one of the following is NOT a true statement about a workflow?",
@@ -1654,7 +2027,10 @@
       "correct_answers": [
         "Can be modified by any user"
       ],
-      "explanation": "Workflows cannot be modified by any user. They typically have specific permissions and can only be modified by users with the necessary access."
+      "explanation": "Workflows cannot be modified by any user. They typically have specific permissions and can only be modified by users with the necessary access.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which of the following are NOT methods from the GlideRecord API? More than one response may be correct.",
@@ -1670,7 +2046,11 @@
         "addOrQuery()",
         "addAndQuery()"
       ],
-      "explanation": "addOrQuery() and addAndQuery() are not methods from the GlideRecord API. If a script contains multiple statements that use the addQuery() method the queries are ANDed. To explicitly AND or OR a condition in a query, use the methods from the GlideQueryCondition class."
+      "explanation": "addOrQuery() and addAndQuery() are not methods from the GlideRecord API. If a script contains multiple statements that use the addQuery() method the queries are ANDed. To explicitly AND or OR a condition in a query, use the methods from the GlideQueryCondition class.",
+      "correct_answers_index": [
+        2,
+        3
+      ]
     },
     {
       "prompt": "Which of the following are true about widget options?",
@@ -1686,7 +2066,11 @@
         "Developers can add widget options to the widget option schema",
         "Reference is a valid data type for a widget option"
       ],
-      "explanation": "Setting widget options affects only one instance of a widget. Every widget type has its own widget options schema. Only developers can change the widget option values."
+      "explanation": "Setting widget options affects only one instance of a widget. Every widget type has its own widget options schema. Only developers can change the widget option values.",
+      "correct_answers_index": [
+        3,
+        4
+      ]
     },
     {
       "prompt": "A workflow context contains logging information. Developers can write their own log messages to the workflow context using the Workflow API logging methods. Which one of the following is NOT a Workflow API logging method?",
@@ -1700,7 +2084,10 @@
       "correct_answers": [
         "workflow.crit"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which of the following is a strategy for debugging Client Scripts or UI Policies?",
@@ -1716,7 +2103,10 @@
       "correct_answers": [
         "All of the above"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        5
+      ]
     },
     {
       "prompt": "How can a developer extract data from the response body after calling a REST web service?",
@@ -1732,7 +2122,11 @@
         "Use the JSON API to convert JSON formatted responses to a JavaScript object",
         "Use the XMLDocument2 API to extract data from XML formatted responses."
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        1,
+        2
+      ]
     },
     {
       "prompt": "Which one of the following best describes the data import process?",
@@ -1747,7 +2141,10 @@
       "correct_answers": [
         "Load data from the data source into a staging table. Use a Transform Map to move data from the staging table fields to the target table fields then verify the data integrity."
       ],
-      "explanation": "It is not possible to skip or change the order of steps in the import process."
+      "explanation": "It is not possible to skip or change the order of steps in the import process.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which of the following are steps in the generalized process for working with events?",
@@ -1764,7 +2161,12 @@
         "Generate the event",
         "Respond to the event"
       ],
-      "explanation": "Although you could use a Business Rule or Scheduled Script Execution to generate the event, any server-side script can do that. Business Rules and Scheduled Script Executions are not part of the generalized process for working with events."
+      "explanation": "Although you could use a Business Rule or Scheduled Script Execution to generate the event, any server-side script can do that. Business Rules and Scheduled Script Executions are not part of the generalized process for working with events.",
+      "correct_answers_index": [
+        0,
+        2,
+        3
+      ]
     },
     {
       "prompt": "Where can Admins check which release is running on a ServiceNow instance?",
@@ -1778,7 +2180,10 @@
       "correct_answers": [
         "Stats module"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "How are Workflows moved between instances?",
@@ -1792,7 +2197,10 @@
       "correct_answers": [
         "Workflows are moved using Update Sets"
       ],
-      "explanation": "Workflows are saved as an update sets changes. We can move them by the use of Update Sets"
+      "explanation": "Workflows are saved as an update sets changes. We can move them by the use of Update Sets",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which group of permissions is used to control Application and Module access?",
@@ -1806,7 +2214,10 @@
       "correct_answers": [
         "Roles"
       ],
-      "explanation": "In ServiceNow, roles are used to limit and control access to features in applications and modules"
+      "explanation": "In ServiceNow, roles are used to limit and control access to features in applications and modules",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "What is a Dictionary Override?",
@@ -1820,7 +2231,10 @@
       "correct_answers": [
         "A Dictionary Override sets field properties in extended tables"
       ],
-      "explanation": "Dictionary overrides allow system administrators to define certain field settings on an extended table differently from those on the parent table without affecting the parent table or its extended tables. Dictionary overrides are defined in the dictionary entry record for the field on the parent table."
+      "explanation": "Dictionary overrides allow system administrators to define certain field settings on an extended table differently from those on the parent table without affecting the parent table or its extended tables. Dictionary overrides are defined in the dictionary entry record for the field on the parent table.",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "What is the function of user impersonation?",
@@ -1834,7 +2248,10 @@
       "correct_answers": [
         "Testing and visibility"
       ],
-      "explanation": "User impersonation allows you to temporarily sign in as a different user in your network. Users with full impersonation permissions can impersonate all other users in their network and take any action, regardless of the impersonating user's own permission level. It is mainly used for testing on behalf of another user."
+      "explanation": "User impersonation allows you to temporarily sign in as a different user in your network. Users with full impersonation permissions can impersonate all other users in their network and take any action, regardless of the impersonating user's own permission level. It is mainly used for testing on behalf of another user.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What information does the System Dictionary contain?",
@@ -1848,7 +2265,10 @@
       "correct_answers": [
         "The definition for each table and column"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        1
+      ]
     },
     {
       "prompt": "Which one of the following statements best describes the purpose of an Update Set?",
@@ -1862,7 +2282,10 @@
       "correct_answers": [
         "An Update Set allows administrators to group a series of changes into a named set and then move this set as a unit to other systems"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which technique is used to get information from a series of referenced fields from different tables?",
@@ -1876,7 +2299,10 @@
       "correct_answers": [
         "Dot-Walking"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        2
+      ]
     },
     {
       "prompt": "What is a schema map?",
@@ -1890,7 +2316,10 @@
       "correct_answers": [
         "A schema map displays the details of tables and their relationships in a visual manner, allowing administrators to view and easily access different parts of the database schema"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which one of the following statements describes the contents of the Configuration Management Database (CMDB)?",
@@ -1904,7 +2333,10 @@
       "correct_answers": [
         "The CMDB contains data about tangible and intangible business assets"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "In what order should filter elements be specified?",
@@ -1918,7 +2350,10 @@
       "correct_answers": [
         "Field, Operator, then Value"
       ],
-      "explanation": "Active is a field, 'is' is an operator and finally 'true' is a value that active field can have."
+      "explanation": "Active is a field, 'is' is an operator and finally 'true' is a value that active field can have.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Which one of the following statements is true about Column Context Menus?",
@@ -1932,7 +2367,10 @@
       "correct_answers": [
         "It displays actions such as creating quick reports, configuring the list, and exporting data"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "When using the Load Data and Transform Map process, what is the Mapping Assist used for?",
@@ -1946,7 +2384,10 @@
       "correct_answers": [
         "Mapping fields using a Field Map"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Which of the following is used to initiate a flow?",
@@ -1960,7 +2401,10 @@
       "correct_answers": [
         "A Trigger"
       ],
-      "explanation": "Trigger initiates a flow:"
+      "explanation": "Trigger initiates a flow:",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Define record producer",
@@ -1972,7 +2416,10 @@
       "correct_answers": [
         "A record producer is a catalog item that lets users create task-based records from the Service Catalog. It provides an alternate way for creating records through Service Catalog."
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What is the use of a reference qualifier?",
@@ -1985,7 +2432,10 @@
       "correct_answers": [
         "It is used to restrict the data that can be selected for a reference field."
       ],
-      "explanation": "Reference Qualifiers are to create filters that restrict the data that is returned for a reference field. A reference field stores a link (reference) to a field on another table, making the records/fields in the referenced table available to the form containing the reference field. Reference qualifiers are a powerful tool that every Service Now administrator and consultant should have in their tool belt. They allow you to dynamically filter the available options from a reference field. Example :- Caller, Assigned To field on Incident Table which refers to User [sys_user] table."
+      "explanation": "Reference Qualifiers are to create filters that restrict the data that is returned for a reference field. A reference field stores a link (reference) to a field on another table, making the records/fields in the referenced table available to the form containing the reference field. Reference qualifiers are a powerful tool that every Service Now administrator and consultant should have in their tool belt. They allow you to dynamically filter the available options from a reference field. Example :- Caller, Assigned To field on Incident Table which refers to User [sys_user] table.",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "Who can create or update ACL?",
@@ -1998,7 +2448,10 @@
       "correct_answers": [
         "security_admin creates or updates ACL."
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "It is possible to create incidents automatically based on alerts from Event Management.",
@@ -2010,7 +2463,10 @@
       "correct_answers": [
         "True"
       ],
-      "explanation": "Please refer to this community topic: https://www.servicenow.com/community/service-management-forum/alert-incident-created-automatically/m-p/400760"
+      "explanation": "Please refer to this community topic: https://www.servicenow.com/community/service-management-forum/alert-incident-created-automatically/m-p/400760",
+      "correct_answers_index": [
+        0
+      ]
     },
     {
       "prompt": "What can you use to explore the CMDB hierarchy and table definitions?",
@@ -2024,7 +2480,10 @@
       "correct_answers": [
         "CI Class Manager"
       ],
-      "explanation": ""
+      "explanation": "",
+      "correct_answers_index": [
+        3
+      ]
     },
     {
       "prompt": "Are Business Rules need to be always scripted?",
@@ -2036,7 +2495,12 @@
       "correct_answers": [
         "False"
       ],
-      "explanation": "Scripting is not mandatory, you can use Actions to perform simple changes."
+      "explanation": "Scripting is not mandatory, you can use Actions to perform simple changes.",
+      "correct_answers_index": [
+        1
+      ]
     }
-  ]
+  ],
+  "title": "CAD Practice Quiz — Set A",
+  "description": "Sample questions for the ServiceNow CAD exam, prepared for Quiz Hub import."
 }

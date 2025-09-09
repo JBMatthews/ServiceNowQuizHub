@@ -1,25 +1,76 @@
-# SNInsightQuizHub
+# Quiz Hub (ServiceNow Scoped Application)
 
+## Overview
+**Quiz Hub** is a custom ServiceNow application that lets you:
+- Build and manage **quizzes** (title, description, state).
+- Create and import **questions** (1–6 answer choices, explanation, correct answer(s)).
+- Collect and review **feedback** on questions, automatically updating their state with Business Rules.
+- Take quizzes through a dedicated **UI Page** that renders questions and evaluates answers in real-time.
 
-### Getting Started
-To import this application into your instance, first navigate to Studio. From there you'll want to to click the "Import From Source Control" tab.
-<img width="692" alt="Screenshot 2024-04-16 at 4 43 30 PM" src="https://github.com/JBMatthews/SNInsightQuizHub/assets/21102559/e2be2371-e4da-40dd-816f-718684265311">
+The app is scoped as `x_274343_quiz_hub`.
 
-The "Import From Source Control" option should look like this:
-<img width="692" alt="Screenshot 2024-04-16 at 4 41 08 PM" src="https://github.com/JBMatthews/SNInsightQuizHub/assets/21102559/fdae6c76-4521-4baf-ae56-5d21d5449845">
+---
 
-1. Select "https"
-2. Fill in the "URL" section with the https URL GitHub offers for the repository
-3. Select a valid credential for the appropriate GitHub account (If you haven't created credentials, scroll down to the "Created Credentials" section)
-4. For "Branch," use the branch default branch GitHub is using to store your project (main or master is often the default)
-5. Click "Import"
+## Features
+- **Import quizzes from JSON** (see sample files `csa_quiz_data.json` and `cad_quiz_data_FIXED.json`).
+- **Create quizzes manually** via ServiceNow modules.
+- **Take a quiz** in the UI, with multi-choice and single-choice support.
+- **Submit feedback** on questions to flag errors or suggest improvements.
+- **Automatic state management** of questions when feedback is submitted.
+- **Role-based access** with ACLs to control who can create, edit, or take quizzes.
 
+---
 
-#### Create Credentials
-If you don't have the necessary credentials you'll want to follow this instructions:
-1. Using the Application Menu Navigator, type "Credentials" and select "Credetials" under the "Conections & Credentials" module
-2. Click "New" to create a new credential
-3. Locate and select the "Basic Auth Credentials" option
-4. Fill out the new credentials form, by giving it a name and then the username and password of the GitHub account you are importing from<br>
-<img width="692" alt="Screenshot 2024-04-16 at 4 56 28 PM" src="https://github.com/JBMatthews/SNInsightQuizHub/assets/21102559/30dec399-349e-4133-9d49-a4f5edcdb815"><br>
-5. Once complete, click the "Sumbit" button and then navigate back to "Import From Source Control" in Studio
+## How to Use
+
+1. **Access the App**
+   - Navigate in the Application Navigator to **Quiz Hub**.
+
+2. **Import a Quiz**
+   - Go to **Import Quiz (JSON)**.
+   - Upload a `.json` file that follows the required schema:
+     ```json
+     {
+       "title": "CSA Practice Quiz",
+       "description": "Sample questions for CSA exam",
+       "questions": [
+         {
+           "prompt": "What is a schema map?",
+           "type": "single",
+           "choices": [
+             "JavaScript configured to run on record events",
+             "UI control to add columns to a list",
+             "Graphical representation of table relationships"
+           ],
+           "correct_answers": [
+             "Graphical representation of table relationships"
+           ],
+           "correct_answers_index": [2],
+           "explanation": "Schema maps show referenced/referencing and extended/parent table relationships."
+         }
+       ]
+     }
+     ```
+
+3. **Create a Quiz Manually**
+   - Use the **Create New Quiz** module.
+   - Add questions via related list entries.
+
+4. **Take a Quiz**
+   - Open the **Quiz** module.
+   - Select an active quiz to begin answering questions.
+   - Submit answers and review explanations.
+
+5. **Give Feedback**
+   - Use the **Question Feedback** page/module.
+   - Feedback can mark a question as needing deactivation or corrections.
+
+---
+
+## Installation
+
+### 1. Clone / Download
+If working locally with GitHub:
+```bash
+git clone https://github.com/<your-org>/ServiceNowQuizHub.git
+
