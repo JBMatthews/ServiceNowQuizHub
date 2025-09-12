@@ -31,39 +31,39 @@ The app is scoped as `x_274343_quiz_hub`.
    - Upload a `.json` file that follows the required schema:
      ```json
      {
-  "title": "",
-  "dev": "QuizHub",
-  "date": "08/04/2023",
-  "description": "Just a template for creating a JSON file to import a new quiz into Quiz Hub",
-  "questions": [
-    {
-      "prompt": "Question 1?",
-      "type": "single",
-      "choices": [
-        "This is choice #1",
-        "Choice #2 here",
-        "And #3",
-        "And lastly #4"
-      ],
-      "correct_answers": ["Choice #2 here"],
-      "correct_answers_index": [1],
-      "explanation": "Explanation of answer goes here"
-    },
-    {
-      "prompt": "What do all of these mean?",
-      "type": "multiple",
-      "choices": [
-        "Type can be either single or multiple. Single means one correct answer, multiple can be 1-6 correct answers.",
-        "There must be at least 2 answers listed here in choices, with a max of 6.",
-        "correct_answers is the index of the correct answer(s). Remember index starts with zero (0)!",
-        "Explanation is the explanation of the answer"
-      ],
-      "correct_answers": ["There must be at least 2 answers listed here in choices.","correct_answers is the index of the correct answer(s). Remember index starts with zero (0)!"],
-      "correct_answers_index": [1, 3],
-      "explanation": "By default, cross-scope access is turned on in Table and Workflow"
-    }
-  ]
-}
+        "title": "",
+        "dev": "QuizHub",
+        "date": "08/04/2023",
+        "description": "Just a template for creating a JSON file to import a new quiz into Quiz Hub",
+        "questions": [
+          {
+            "prompt": "Question 1?",
+            "type": "single",
+            "choices": [
+              "This is choice #1",
+              "Choice #2 here",
+              "And #3",
+              "And lastly #4"
+            ],
+            "correct_answers": ["Choice #2 here"],
+            "correct_answers_index": [1],
+            "explanation": "Explanation of answer goes here"
+          },
+          {
+            "prompt": "What do all of these mean?",
+            "type": "multiple",
+            "choices": [
+              "Type can be either single or multiple. Single means one correct answer, multiple can be 1-6 correct answers.",
+              "There must be at least 2 answers listed here in choices, with a max of 6.",
+              "correct_answers is the index of the correct answer(s). Remember index starts with zero (0)!",
+              "Explanation is the explanation of the answer"
+            ],
+            "correct_answers": ["There must be at least 2 answers listed here in choices.","correct_answers is the index of the correct answer(s). Remember index starts with zero (0)!"],
+            "correct_answers_index": [1, 3],
+            "explanation": "By default, cross-scope access is turned on in Table and Workflow"
+          }
+        ]
+      }
 
      ```
 
