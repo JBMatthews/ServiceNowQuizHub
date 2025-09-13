@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Quiz Hub">a16498a0472031103853249bd36d436c</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Take Quizzes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>10</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>/x_274343_quiz_hub_Quiz.do</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-09 20:37:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e398db947a031103853249bd36d4330</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Take Quizzes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_app_module_8e398db947a031103853249bd36d4330</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-25 22:05:16</sys_updated_on>
+        <timeline_page/>
+        <title>Take Quizzes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</application>
+        <file_path/>
+        <instance_id>c23732c41b71f1906a85eb9b2d4bcbf0</instance_id>
+        <instance_name>dev181724</instance_name>
+        <name>sys_app_module_8e398db947a031103853249bd36d4330</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Quiz Hub">a16498a0472031103853249bd36d436c</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Take Quizzes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>10</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>/x_274343_quiz_hub_Quiz.do</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jeremy.fisher</sys_created_by>
+        <sys_created_on>2023-08-09 20:37:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e398db947a031103853249bd36d4330</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Take Quizzes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_app_module_8e398db947a031103853249bd36d4330</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-25 22:05:16</sys_updated_on>
+        <timeline_page/>
+        <title>Take Quizzes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>]]></payload>
+        <payload_hash>67726138</payload_hash>
+        <record_name>Take Quizzes</record_name>
+        <reverted_from/>
+        <source>bcb1053983e72210a4b2f1e6feaad325</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-24 11:46:16</sys_created_on>
+        <sys_id>66b1853983e72210a4b2f1e6feaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198dbe68ec40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-24 11:46:16</sys_updated_on>
+        <type>Module</type>
+        <update_guid>26b18539d5e722102649c6556f3a73f8</update_guid>
+        <update_guid_history>26b18539d5e722102649c6556f3a73f8:67726138</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Take Quizzes">459bc68e83332210a4b2f1e6feaad3c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-06 22:03:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>5504526f2ab643809c77c3b429d81000</sys_id>
+        <sys_metadata>8e398db947a031103853249bd36d4330</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Take Quizzes</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_scope_delete display_value="">096aec9d9bb5458c806d5e6bbede4a21</sys_scope_delete>
+        <sys_update_name>sys_app_module_8e398db947a031103853249bd36d4330</sys_update_name>
+        <sys_update_version display_value="sys_app_module_8e398db947a031103853249bd36d4330">66b1853983e72210a4b2f1e6feaad3f8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-06 22:03:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
