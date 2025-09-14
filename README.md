@@ -150,7 +150,7 @@ When importing from or linking to Source Control in ServiceNow Studio, you often
    > For security purposes, **only grant the minimum scopes needed**.  
    > `repo` is sufficient for most ServiceNow use cases.
 
-5. Scroll down and click **Generate token**.
+   5. Scroll down and click **Generate token**.
 
 ---
 
