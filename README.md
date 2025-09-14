@@ -81,24 +81,24 @@
 
 ## Installation
 
-1. Fork this repo
+1. **Fork this repo**
 - Fork this repo by clicking the "Fork" button
 <img width="180" height="64" alt="Screenshot 2025-09-14 at 4 40 10 PM" src="https://github.com/user-attachments/assets/19e60ddc-2f05-4e40-b6ca-b0ca6d4d99ac" />
 
 ---
 
-2. Create Token and Establish ServiceNow Credentials
+2. **Create Token and Establish ServiceNow Credentials**
 - If you aren't familiar with creating a GitHub Token and linking with ServiceNow, you can click [here](#creating-a-github-personal-access-token-pat).
 
 ---
 
-3. Open Studio
+3. **Open Studio**
 - Navigate to **System Applications → Studio** in the left-hand navigator.
 - In the Studio landing page, click **Import from Source Control**.
 
 ---
 
-4. Enter Repository Details
+4. **Enter Repository Details**
 Fill in the following fields:
 - **URL**: The HTTPS URL of your forked Git repository (e.g., `https://github.com/your-org/your-app.git`).
 - **Credential**: Select or create a Credential record (Basic Auth or Personal Access Token).
@@ -108,7 +108,7 @@ Fill in the following fields:
 
 ---
 
-5. Click "Import"
+5. **Click "Import"**
 - Click **Import** to start pulling the application from the repository.
 - Studio will:
    - Create a new scoped application.
@@ -116,7 +116,7 @@ Fill in the following fields:
 
 ---
 
-6. Verify the Application
+6. **Verify the Application**
 Once import completes:
 - Browse through **Files & Explorer** in Studio to confirm that:
   - Business Rules, Script Includes, UI Actions, etc. are present.
@@ -132,40 +132,40 @@ When importing from or linking to Source Control in ServiceNow Studio, you often
 
 ---
 
-### 1. Go to GitHub Settings
-1. Sign in to [GitHub](https://github.com/).
-2. In the top-right corner, click your **profile picture** → **Settings**.
-3. Scroll down the left-hand menu and click **Developer settings** → **Personal access tokens** → **Tokens (classic)**.
+1. **Go to GitHub Settings**
+   1. Sign in to [GitHub](https://github.com/).
+   2. In the top-right corner, click your **profile picture** → **Settings**.
+   3. Scroll down the left-hand menu and click **Developer settings** → **Personal access tokens** → **Tokens (classic)**.
 
 ---
 
-### 2. Generate a New Token
-1. Click **Generate new token** → **Generate new token (classic)**.
-2. Give your token a **descriptive name** (e.g., `ServiceNow Studio`).
-3. Set **Expiration** to a reasonable period (e.g., 90 days).
-4. Under **Select scopes**, check at least:
+2. **Generate a New Token**
+   1. Click **Generate new token** → **Generate new token (classic)**.
+   2. Give your token a **descriptive name** (e.g., `ServiceNow Studio`).
+   3. Set **Expiration** to a reasonable period (e.g., 90 days).
+   4. Under **Select scopes**, check at least:
    - `repo` (Full control of private repositories — required to pull/push code)
    - `read:org` (optional, if your repo is in an organization and requires it)
 
-> For security purposes, **only grant the minimum scopes needed**.  
-> `repo` is sufficient for most ServiceNow use cases.
+   > For security purposes, **only grant the minimum scopes needed**.  
+   > `repo` is sufficient for most ServiceNow use cases.
 
 5. Scroll down and click **Generate token**.
 
 ---
 
-### 3. Copy and Store Your Token
-1. Copy the generated token and save it securely (password manager recommended).
-> GitHub will not show it again once you leave the page.
+3. **Copy and Store Your Token**
+   1. Copy the generated token and save it securely (password manager recommended).
+   > GitHub will not show it again once you leave the page.
 
 ---
 
-### 4. Use the Token in ServiceNow
-1. In your ServiceNow instance, go to **System Definition → Credentials** (or **Connections & Credentials → Credentials** depending on version).
-2. Create a **Basic Auth Credential**:
-   - **Username**: Your GitHub username
-   - **Password**: Paste the **PAT** you just generated
-3. Save the credential record.
+4. **Use the Token in ServiceNow**
+   1. In your ServiceNow instance, go to **System Definition → Credentials** (or **Connections & Credentials → Credentials** depending on version).
+   2. Create a **Basic Auth Credential**:
+      - **Username**: Your GitHub username
+      - **Password**: Paste the **PAT** you just generated
+   3. Save the credential record.
 
 ---
 
