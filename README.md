@@ -84,31 +84,26 @@ The app is scoped as `x_274343_quiz_hub`.
 ## Installation
 
 ### 1. Fork this repo
-Fork this repo by clicking the "Fork" button
+- Fork this repo by clicking the "Fork" button
+
 <img width="180" height="64" alt="Screenshot 2025-09-14 at 4 40 10 PM" src="https://github.com/user-attachments/assets/19e60ddc-2f05-4e40-b6ca-b0ca6d4d99ac" />
 
 ---
 
 ### 2. Create Token and Establish ServiceNow Credentials
-- If you want you can click [here](#creating-a-github-personal-access-token-pat).
-
-
----
-
-### 4. 
+- If you aren't familiar with creating a GitHub Token and linking with ServiceNow, you can click [here](#creating-a-github-personal-access-token-pat).
 
 ---
 
-
-### 1. Open Studio
-1. Navigate to **System Applications → Studio** in the left-hand navigator.
-2. In the Studio landing page, click **Import from Source Control**.
+### 3. Open Studio
+- Navigate to **System Applications → Studio** in the left-hand navigator.
+- In the Studio landing page, click **Import from Source Control**.
 
 ---
 
-### 2. Enter Repository Details
+### 4. Enter Repository Details
 Fill in the following fields:
-- **URL**: The HTTPS URL of your Git repository (e.g., `https://github.com/your-org/your-app.git`).
+- **URL**: The HTTPS URL of your forked Git repository (e.g., `https://github.com/your-org/your-app.git`).
 - **Credential**: Select or create a Credential record (Basic Auth or Personal Access Token).
 - **Branch**: The branch you want to import (defaults to `main` if left blank).
 - **Application Name**: Enter a unique name for the application being imported.
@@ -116,15 +111,15 @@ Fill in the following fields:
 
 ---
 
-### 3. Click "Import"
-1. Click **Import** to start pulling the application from the repository.
-2. Studio will:
+### 5. Click "Import"
+- Click **Import** to start pulling the application from the repository.
+- Studio will:
    - Create a new scoped application.
    - Pull all tracked files (metadata and scripts) from the repository.
 
 ---
 
-### 4. Verify the Application
+### 6. Verify the Application
 Once import completes:
 - Browse through **Files & Explorer** in Studio to confirm that:
   - Business Rules, Script Includes, UI Actions, etc. are present.
@@ -132,8 +127,6 @@ Once import completes:
 - Run the application to ensure no errors are thrown.
 
 ---
-
-
 
 
 ## Creating a GitHub Personal Access Token (PAT)
@@ -157,7 +150,7 @@ When importing from or linking to Source Control in ServiceNow Studio, you often
    - `repo` (Full control of private repositories — required to pull/push code)
    - `read:org` (optional, if your repo is in an organization and requires it)
 
-> ⚠️ For security, **only grant the minimum scopes needed**.  
+> For security purposes, **only grant the minimum scopes needed**.  
 > `repo` is sufficient for most ServiceNow use cases.
 
 5. Scroll down and click **Generate token**.
@@ -165,8 +158,8 @@ When importing from or linking to Source Control in ServiceNow Studio, you often
 ---
 
 ### 3. Copy and Store Your Token
-- Copy the generated token **immediately** and save it securely (password manager recommended).
-- GitHub will not show it again once you leave the page.
+1. Copy the generated token and save it securely (password manager recommended).
+> GitHub will not show it again once you leave the page.
 
 ---
 
@@ -177,8 +170,6 @@ When importing from or linking to Source Control in ServiceNow Studio, you often
    - **Password**: Paste the **PAT** you just generated
 3. Save the credential record.
 
-When importing or linking from source control in Studio, select this credential to authenticate.
-
 ---
 
 ### Best Practices
@@ -188,18 +179,7 @@ When importing or linking from source control in Studio, select this credential 
 
 ---
 
-### Example Repository URL
-When using HTTPS, your repository URL should look like:
-
-
-
-
-
-
-
----
-
-## Tips
+### Tips
 
 - **Credentials**: If you don’t have a Credential record yet, create one under **System Definition → Credentials** before importing.
 - **Branch Switching**: After import, you can use **Link to Source Control** in Studio to pull updates, switch branches, or commit changes back.
@@ -207,7 +187,7 @@ When using HTTPS, your repository URL should look like:
 
 ---
 
-## Troubleshooting
+### Troubleshooting
 
 - **Authentication Failed**: Double-check the repository URL and credential.
 - **Scope Conflict**: Ensure the application scope is unique in your instance.
@@ -215,7 +195,7 @@ When using HTTPS, your repository URL should look like:
 
 ---
 
-## References
+### References
 
 - [ServiceNow Docs: Import from Source Control](https://developer.servicenow.com/dev.do#!/learn/learning-plans/tokyo/app_store_learnv2_sourcecontrol_tokyo_importing_from_source_control)
 - [Studio Overview](https://docs.servicenow.com/bundle/tokyo-application-development/page/build/applications/concept/c_StudioOverview.html)
