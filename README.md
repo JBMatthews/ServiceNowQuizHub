@@ -81,24 +81,24 @@
 
 ## Installation
 
-### 1. Fork this repo
+1. Fork this repo
 - Fork this repo by clicking the "Fork" button
 <img width="180" height="64" alt="Screenshot 2025-09-14 at 4 40 10 PM" src="https://github.com/user-attachments/assets/19e60ddc-2f05-4e40-b6ca-b0ca6d4d99ac" />
 
 ---
 
-### 2. Create Token and Establish ServiceNow Credentials
+2. Create Token and Establish ServiceNow Credentials
 - If you aren't familiar with creating a GitHub Token and linking with ServiceNow, you can click [here](#creating-a-github-personal-access-token-pat).
 
 ---
 
-### 3. Open Studio
+3. Open Studio
 - Navigate to **System Applications → Studio** in the left-hand navigator.
 - In the Studio landing page, click **Import from Source Control**.
 
 ---
 
-### 4. Enter Repository Details
+4. Enter Repository Details
 Fill in the following fields:
 - **URL**: The HTTPS URL of your forked Git repository (e.g., `https://github.com/your-org/your-app.git`).
 - **Credential**: Select or create a Credential record (Basic Auth or Personal Access Token).
@@ -108,7 +108,7 @@ Fill in the following fields:
 
 ---
 
-### 5. Click "Import"
+5. Click "Import"
 - Click **Import** to start pulling the application from the repository.
 - Studio will:
    - Create a new scoped application.
@@ -116,7 +116,7 @@ Fill in the following fields:
 
 ---
 
-### 6. Verify the Application
+6. Verify the Application
 Once import completes:
 - Browse through **Files & Explorer** in Studio to confirm that:
   - Business Rules, Script Includes, UI Actions, etc. are present.
