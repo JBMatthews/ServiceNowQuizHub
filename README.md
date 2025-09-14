@@ -83,7 +83,6 @@
 
 ### 1. Fork this repo
 - Fork this repo by clicking the "Fork" button
-
 <img width="180" height="64" alt="Screenshot 2025-09-14 at 4 40 10 PM" src="https://github.com/user-attachments/assets/19e60ddc-2f05-4e40-b6ca-b0ca6d4d99ac" />
 
 ---
