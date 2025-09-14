@@ -11,7 +11,7 @@
 
 ## Features
 - **Import quizzes from JSON** (or use files `csa_practice_quiz.json` and `cad_practice_quiz.json` to get started).
-- **Create quizzes manually** useing the ServiceNow `Create New Quiz` module.
+- **Create quizzes manually** using the ServiceNow `Create New Quiz` module.
 - **Take a quiz** in the UI, with multi-choice and single-choice question support.
 - **Submit feedback** on questions to flag errors or suggest improvements.
 - **Automatic state management** of questions when feedback is submitted.
