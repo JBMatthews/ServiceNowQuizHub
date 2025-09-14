@@ -2,25 +2,23 @@
 
 ## Overview
 **Quiz Hub** is a custom ServiceNow application that lets you:
-- Build and manage **quizzes** (title, description, state).
-- Create and import **questions** (1–6 answer choices, explanation, correct answer(s)).
-- Collect and review **feedback** on questions, automatically updating their state with Business Rules.
+- Build and manage **quizzes**.
+- Create and import custom **questions & answers**.
+- Submit and review **feedback** on questions, automatically updating their state, if necessary.
 - Take quizzes through a dedicated **UI Page** that renders questions and evaluates answers in real-time.
-
-The app is scoped as `x_274343_quiz_hub`.
 
 ---
 
 ## Features
-- **Import quizzes from JSON** (see sample files `csa_practice_quiz.json` and `cad_practice_quiz.json`).
-- **Create quizzes manually** via ServiceNow modules.
+- **Import quizzes from JSON** (or use files `csa_practice_quiz.json` and `cad_practice_quiz.json` to get started).
+- **Create quizzes manually** useing the ServiceNow `Create New Quiz` module.
 - **Take a quiz** in the UI, with multi-choice and single-choice question support.
 - **Submit feedback** on questions to flag errors or suggest improvements.
 - **Automatic state management** of questions when feedback is submitted.
 
 ---
 
-## How to Use
+## Basic Instruction
 
 1. **Access the App**
    - Navigate in the Application Navigator to **Quiz Hub**.
