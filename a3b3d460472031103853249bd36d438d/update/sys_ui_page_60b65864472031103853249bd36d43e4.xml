@@ -78,7 +78,7 @@
 	</style>
 	<div id="main" class="center">
 		<div class="h2">Use this page to import a JSON file containing a quiz and questions.</div>
-		<div class="h3" style="margin-bottom: 25px;">Download a template JSON file <a href="https://dev181724.service-now.com/sys_attachment.do?sys_id=bbaf6e5e47a031103853249bd36d43c7" style="margin-left: 5px;"> here.</a></div>
+		<div class="h3" style="margin-bottom: 25px;">Download a template JSON file <a href="https://dev181724.service-now.com/nav_to.do?uri=sys_attachment.do?sys_id=0e5be67f83f72610a4b2f1e6feaad347" style="margin-left: 5px;"> here.</a></div>
 		<input type="file" id="jsonFileInput" style="margin-bottom: 25px;"></input>
 		<button onclick="importQuiz()">Import</button>
 		<div id="result" style="margin-top: 25px;"></div>
@@ -90,14 +90,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-05 19:57:45</sys_created_on>
         <sys_id>60b65864472031103853249bd36d43e4</sys_id>
-        <sys_mod_count>101</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_name>Quiz Import JSON</sys_name>
         <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
         <sys_update_name>sys_ui_page_60b65864472031103853249bd36d43e4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-09-06 21:51:03</sys_updated_on>
+        <sys_updated_on>2025-09-12 10:53:17</sys_updated_on>
     </sys_ui_page>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>60b65864472031103853249bd36d43e4</id>
