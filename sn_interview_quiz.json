@@ -1,0 +1,1828 @@
+{
+  "title": "ServiceNow Developer Interview Prep Quiz",
+  "dev": "QuizHub",
+  "date": "09/17/2025",
+  "description": "100 questions covering ServiceNow development and JavaScript in the context of ServiceNow\u2014ideal for interview prep.",
+  "questions": [
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q1)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q2)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q3)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q4)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q5)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q6)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q7)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q8)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q9)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q10)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q11)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q12)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q13)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q14)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q15)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q16)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q17)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q18)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q19)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q20)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q21)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q22)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q23)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q24)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q25)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q26)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q27)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q28)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q29)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q30)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q31)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q32)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q33)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q34)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q35)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q36)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q37)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q38)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q39)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q40)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q41)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q42)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q43)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q44)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q45)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q46)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q47)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q48)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q49)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q50)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q51)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q52)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q53)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q54)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q55)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q56)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q57)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q58)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q59)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q60)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q61)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q62)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q63)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q64)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q65)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q66)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q67)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q68)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q69)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q70)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q71)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q72)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q73)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q74)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q75)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q76)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q77)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q78)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q79)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q80)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q81)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q82)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q83)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q84)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q85)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q86)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q87)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q88)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q89)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q90)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    },
+    {
+      "prompt": "What is a GlideRecord used for in ServiceNow? (Q91)",
+      "type": "single",
+      "choices": [
+        "To perform database operations on ServiceNow tables",
+        "To generate client-side alerts",
+        "To define UI Policies",
+        "To manage ACLs"
+      ],
+      "correct_answers": [
+        "To perform database operations on ServiceNow tables"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideRecord is a server-side API used to interact with ServiceNow tables (CRUD operations)."
+    },
+    {
+      "prompt": "Which of these are valid ways to trigger a Business Rule in ServiceNow? (Q92)",
+      "type": "multiple",
+      "choices": [
+        "Insert",
+        "Update",
+        "Delete",
+        "Query"
+      ],
+      "correct_answers": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Business Rules run on database operations such as insert, update, or delete\u2014not query."
+    },
+    {
+      "prompt": "In ServiceNow, what is the purpose of the 'g_form' object? (Q93)",
+      "type": "single",
+      "choices": [
+        "To manipulate form fields on the client-side",
+        "To query tables from the server",
+        "To run Scheduled Jobs",
+        "To configure Access Controls"
+      ],
+      "correct_answers": [
+        "To manipulate form fields on the client-side"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "The g_form API is used in client scripts/UI policies to control form behavior and field values."
+    },
+    {
+      "prompt": "Which JavaScript method correctly parses a JSON string in a Script Include? (Q94)",
+      "type": "single",
+      "choices": [
+        "JSON.parse(str)",
+        "parse.JSON(str)",
+        "GlideJSON.parse(str)",
+        "JSON.toObject(str)"
+      ],
+      "correct_answers": [
+        "JSON.parse(str)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Standard JavaScript method JSON.parse(str) is used to parse a JSON string."
+    },
+    {
+      "prompt": "Which of the following are scoped application features in ServiceNow? (Q95)",
+      "type": "multiple",
+      "choices": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "Global Business Rules",
+        "App-specific Script Includes"
+      ],
+      "correct_answers": [
+        "Application-specific tables",
+        "Separate namespace to avoid conflicts",
+        "App-specific Script Includes"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "Scoped apps provide their own namespace, tables, and resources like Script Includes."
+    },
+    {
+      "prompt": "What does 'current' represent in a Business Rule script? (Q96)",
+      "type": "single",
+      "choices": [
+        "The GlideRecord of the record being acted on",
+        "The current date/time",
+        "The logged-in user",
+        "The workflow ID"
+      ],
+      "correct_answers": [
+        "The GlideRecord of the record being acted on"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "In server-side scripts, 'current' is the GlideRecord object for the record being processed."
+    },
+    {
+      "prompt": "Which GlideRecord method returns true if a record was successfully retrieved? (Q97)",
+      "type": "single",
+      "choices": [
+        "gr.get(sys_id)",
+        "gr.query()",
+        "gr.next()",
+        "gr.update()"
+      ],
+      "correct_answers": [
+        "gr.get(sys_id)"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "gr.get(sys_id) returns true if the record exists and was retrieved."
+    },
+    {
+      "prompt": "How can you pass data from a client script to a Script Include? (Q98)",
+      "type": "single",
+      "choices": [
+        "Use GlideAjax",
+        "Use GlideRecord",
+        "Use a UI Policy",
+        "Use a Business Rule"
+      ],
+      "correct_answers": [
+        "Use GlideAjax"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "GlideAjax is the client-callable API for invoking server-side Script Includes."
+    },
+    {
+      "prompt": "Which JavaScript concept allows a function to access variables from its outer scope? (Q99)",
+      "type": "single",
+      "choices": [
+        "Closure",
+        "Prototype",
+        "Encapsulation",
+        "Polymorphism"
+      ],
+      "correct_answers": [
+        "Closure"
+      ],
+      "correct_answers_index": [
+        0
+      ],
+      "explanation": "Closures allow functions to retain access to their lexical scope."
+    },
+    {
+      "prompt": "Which of these are ServiceNow table types? (Q100)",
+      "type": "multiple",
+      "choices": [
+        "Base table",
+        "Extended table",
+        "Join table",
+        "Dictionary table"
+      ],
+      "correct_answers": [
+        "Base table",
+        "Extended table",
+        "Join table"
+      ],
+      "correct_answers_index": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "Tables can be base tables, extended tables, or join tables. 'Dictionary' is metadata, not a table type."
+    }
+  ]
+}
