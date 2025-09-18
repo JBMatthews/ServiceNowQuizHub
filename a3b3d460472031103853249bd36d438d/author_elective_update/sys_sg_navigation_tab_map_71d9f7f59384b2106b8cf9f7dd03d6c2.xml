@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_navigation_tab_map">
+    <sys_sg_navigation_tab_map action="DELETE">
+        <navigation display_value="Mobile Agent">679d4f0653d033002d96ddeeff7b1279</navigation>
+        <navigation_tab/>
+        <order/>
+        <sys_class_name>sys_sg_navigation_tab_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-18 21:43:04</sys_created_on>
+        <sys_id>71d9f7f59384b2106b8cf9f7dd03d6c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_sg_navigation_tab_map_71d9f7f59384b2106b8cf9f7dd03d6c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 21:43:04</sys_updated_on>
+    </sys_sg_navigation_tab_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</application>
+        <file_path/>
+        <instance_id>1eb1762c3b1be6d49aefe747f4e45ab0</instance_id>
+        <instance_name>dev355296</instance_name>
+        <name>sys_sg_navigation_tab_map_71d9f7f59384b2106b8cf9f7dd03d6c2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_navigation_tab_map"><sys_sg_navigation_tab_map action="INSERT_OR_UPDATE"><navigation display_value="Mobile Agent">679d4f0653d033002d96ddeeff7b1279</navigation><navigation_tab/><order/><sys_class_name>sys_sg_navigation_tab_map</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-09-18 21:43:04</sys_created_on><sys_id>71d9f7f59384b2106b8cf9f7dd03d6c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package><sys_policy/><sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope><sys_update_name>sys_sg_navigation_tab_map_71d9f7f59384b2106b8cf9f7dd03d6c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-09-18 21:43:04</sys_updated_on></sys_sg_navigation_tab_map></record_update>]]></payload>
+        <payload_hash>503388119</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>6b917425934032106b8cf9f7dd03d6dc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-18 21:44:12</sys_created_on>
+        <sys_id>855a37399384b2106b8cf9f7dd03d61c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1995ec8f5c50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 21:44:12</sys_updated_on>
+        <type>Navigation Tab Map</type>
+        <update_guid>5c1afbf59084b210e083ec615e0f71ce</update_guid>
+        <update_guid_history>5c1afbf59084b210e083ec615e0f71ce:2144323476,5c1afbf59084b210e083ec615e0f71ce:2144323476</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-18 21:44:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_sg_navigation_tab_map">sys_sg_navigation_tab_map</sys_db_object>
+        <sys_id>0f8ea452867b4d1da6fb2ecd235b6271</sys_id>
+        <sys_metadata>71d9f7f59384b2106b8cf9f7dd03d6c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_scope_delete display_value="">096aec9d9bb5458c806d5e6bbede4a21</sys_scope_delete>
+        <sys_update_name>sys_sg_navigation_tab_map_71d9f7f59384b2106b8cf9f7dd03d6c2</sys_update_name>
+        <sys_update_version display_value="sys_sg_navigation_tab_map_71d9f7f59384b2106b8cf9f7dd03d6c2">855a37399384b2106b8cf9f7dd03d61c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-18 21:44:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

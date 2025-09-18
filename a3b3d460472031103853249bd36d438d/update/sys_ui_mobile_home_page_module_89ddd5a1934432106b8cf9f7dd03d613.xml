@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_mobile_home_page_module">
+    <sys_ui_mobile_home_page_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <background_color>#81878e</background_color>
+        <content_style>light_content</content_style>
+        <icon/>
+        <image>baed19a1934432106b8cf9f7dd03d673</image>
+        <module display_value="Take Quizzes">96d9192d930432106b8cf9f7dd03d6d3</module>
+        <roles/>
+        <subtitle/>
+        <sys_class_name>sys_ui_mobile_home_page_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-17 15:42:14</sys_created_on>
+        <sys_id>89ddd5a1934432106b8cf9f7dd03d613</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Quiz Hub</sys_name>
+        <sys_package display_value="Quiz Hub" source="x_274343_quiz_hub">a3b3d460472031103853249bd36d438d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Quiz Hub">a3b3d460472031103853249bd36d438d</sys_scope>
+        <sys_update_name>sys_ui_mobile_home_page_module_89ddd5a1934432106b8cf9f7dd03d613</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-17 15:42:59</sys_updated_on>
+        <title>Quiz Hub</title>
+    </sys_ui_mobile_home_page_module>
+</record_update>
