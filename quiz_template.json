@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Your Quiz Title Here",
   "dev": "QuizHub",
   "date": "08/04/2023",
   "description": "Just a template for creating a JSON file to import a new quiz into Quiz Hub",
@@ -28,7 +28,7 @@
       ],
       "correct_answers": ["There must be at least 2 answers listed here in choices.","correct_answers is the index of the correct answer(s). Remember index starts with zero (0)!"],
       "correct_answers_index": [1, 3],
-      "explanation": "By default, cross-scope access is turned on in Table and Workflow"
+      "explanation": "Explanation of answer goes here"
     }
   ]
 }
