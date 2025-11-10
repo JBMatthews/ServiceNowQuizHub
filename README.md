@@ -144,7 +144,7 @@ When importing from or linking to Source Control in ServiceNow Studio, you often
    2. Give your token a **descriptive name** (e.g., `ServiceNow Studio`).
    3. Set **Expiration** to a reasonable period (e.g., 90 days).
    4. Under **Select scopes**, check at least:
-      - `repo` (Full control of private repositories — required to pull/push code)
+      - `repo` (Full control of private repositories - required to pull/push code)
       - `read:org` (optional, if your repo is in an organization and requires it)
 
    > For security purposes, **only grant the minimum scopes needed**.  
